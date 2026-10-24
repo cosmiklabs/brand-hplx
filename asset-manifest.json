@@ -1,0 +1,1261 @@
+{
+  "name": "Cosmik HPLX family",
+  "package": "@cosmiklabs/brand-hplx",
+  "version": "0.1.0",
+  "date": "2026-10-24",
+  "family": {
+    "id": "hplx",
+    "name": "HPLX",
+    "source": "tokens/family.json",
+    "extends": "Cosmik baseline 0.7.0",
+    "status": "Approved (owner, 2026-10-15)"
+  },
+  "brand": {
+    "repository": "cosmiklabs/brand",
+    "tag": "v0.8.0",
+    "commit": "e416514a291fb71844280f7cf1e2759d195b7a4d",
+    "directory": "vendor/brand",
+    "lock_file": "vendor/brand/brand.lock.json",
+    "note": "The Cosmik foundation this family builds on, vendored with vendor/brand/scripts/vendor.mjs sync. Verify with node vendor/brand/scripts/vendor.mjs verify vendor/brand [--release <cosmiklabs/brand checkout>]. Never edit it in place."
+  },
+  "system_status": "HPLX family approved (owner, 2026-10-15); Glimmer official symbol approved (owner, 2026-10-17). Builds on cosmiklabs/brand v0.8.0 (Cosmik baseline approved, owner, 2026-10-07).",
+  "license": "LICENSE.md",
+  "known_gaps": [
+    {
+      "id": "hplx-optical-small-icon",
+      "status": "open",
+      "summary": "Glimmer uses the approved geometry at all sizes. No separate optical redraw or platform icon pack is supplied. Historical Ember icons remain deprecated. Historical Ember has an optical redraw for 16–48 px (assets/ember-small.source.json), used by icons/hplx-ember.*, accepted (owner, 2026-10-11)."
+    },
+    {
+      "id": "browser-qa",
+      "status": "open",
+      "summary": "This repository runs no browser check. Up to cosmiklabs/brand 0.7.0, its Chromium checks covered the HPLX heading font and family theme scopes; the vendored foundation now checks only a test-only family scope. Rendered HPLX consumer screens, full browser zoom, other browser engines and assistive-technology checks remain pending."
+    },
+    {
+      "id": "print-proofs",
+      "status": "open",
+      "summary": "No print-process proofs."
+    }
+  ],
+  "entry_points": {
+    "tokens": {
+      "hplx": {
+        "source": "tokens/family.json",
+        "css": "tokens/hplx.css",
+        "json": "tokens/hplx.json",
+        "dtcg": "tokens/hplx.tokens.json",
+        "rust": "tokens/hplx_tokens.rs"
+      },
+      "cosmik": {
+        "css": "vendor/brand/kits/cosmik/tokens/cosmik.css",
+        "json": "vendor/brand/kits/cosmik/tokens/cosmik.json",
+        "dtcg": "vendor/brand/kits/cosmik/tokens/cosmik.tokens.json",
+        "rust": "vendor/brand/kits/cosmik/tokens/cosmik_tokens.rs"
+      }
+    },
+    "controls": "vendor/brand/kits/cosmik/components/controls.css",
+    "family": {
+      "guide": "README.md",
+      "source": "assets/glimmer.source.json",
+      "black": "assets/hplx-glimmer-black.svg",
+      "currentColor": "assets/hplx-glimmer-currentColor.svg",
+      "dark": "assets/hplx-glimmer-dark.svg",
+      "light": "assets/hplx-glimmer-light.svg",
+      "lockup-black": "assets/hplx-glimmer-lockup-black.svg",
+      "lockup-currentColor": "assets/hplx-glimmer-lockup-currentColor.svg",
+      "lockup-dark": "assets/hplx-glimmer-lockup-dark.svg",
+      "lockup-light": "assets/hplx-glimmer-lockup-light.svg",
+      "lockup-white": "assets/hplx-glimmer-lockup-white.svg",
+      "white": "assets/hplx-glimmer-white.svg"
+    },
+    "historical_ember": {
+      "guide": "EMBER-HISTORICAL.md",
+      "source": "assets/ember.source.json",
+      "emblem_amber": "assets/hplx-ember-amber.svg",
+      "emblem_bone": "assets/hplx-ember-bone.svg",
+      "emblem_ink": "assets/hplx-ember-ink.svg",
+      "icon_plate": "assets/hplx-ember-primary.svg",
+      "app_icon_windows": "icons/hplx-ember.ico",
+      "app_icon_macos": "icons/hplx-ember.icns",
+      "app_icon_png": "icons/hplx-ember-512.png",
+      "apple_touch_icon": "icons/hplx-ember-apple-touch-180.png",
+      "lockup_source": "assets/hplx-lockup.source.json",
+      "lockup_primary": "assets/hplx-lockup-primary.svg",
+      "lockup_amber": "assets/hplx-lockup-amber.svg",
+      "lockup_bone": "assets/hplx-lockup-bone.svg",
+      "lockup_ink": "assets/hplx-lockup-ink.svg",
+      "icon_small": "assets/hplx-ember-small.svg"
+    },
+    "web_fonts": [
+      "fonts/web/Spectral-SemiBold.woff2",
+      "vendor/brand/fonts/web/Inter-Regular.woff2",
+      "vendor/brand/fonts/web/Inter-Medium.woff2",
+      "vendor/brand/fonts/web/Inter-SemiBold.woff2",
+      "vendor/brand/fonts/web/IBMPlexMono-Regular.woff2"
+    ],
+    "desktop_fonts": [
+      "fonts/desktop/Spectral-SemiBold.ttf",
+      "vendor/brand/fonts/desktop/IBMPlexMono-Regular.ttf",
+      "vendor/brand/fonts/desktop/Inter-Medium.ttf",
+      "vendor/brand/fonts/desktop/Inter-Regular.ttf",
+      "vendor/brand/fonts/desktop/Inter-SemiBold.ttf"
+    ],
+    "font_licenses": [
+      "fonts/licenses/Spectral-OFL.txt",
+      "vendor/brand/fonts/licenses/Inter-OFL.txt",
+      "vendor/brand/fonts/licenses/IBM-Plex-OFL.txt"
+    ]
+  },
+  "family_identity": {
+    "name": "HPLX Glimmer",
+    "status": "Official symbol approved (owner, 2026-10-17)",
+    "theme_status": "Approved (owner, 2026-10-15), unchanged",
+    "source": "assets/glimmer.source.json",
+    "lockup": "Approved horizontal Spectral SemiBold outlined lockup",
+    "historical": "Ember and its former lockups/icons are deprecated; retained for existing consumers.",
+    "symbol": "Glimmer",
+    "wordmark": "HPLX in Spectral SemiBold, approved horizontal outlined lockup"
+  },
+  "tokens": [
+    {
+      "path": "tokens/family.json",
+      "role": {
+        "kind": "tokens",
+        "format": "source"
+      },
+      "status": "HPLX family source, approved (owner, 2026-10-15)",
+      "sha256": "708e9340079093a600786776174b94c0100d4e023e735d77fa880658b92c88db",
+      "editable": true
+    },
+    {
+      "path": "tokens/hplx.css",
+      "role": {
+        "kind": "tokens",
+        "format": "css"
+      },
+      "generated_by": "vendor/brand/scripts/family.mjs",
+      "sha256": "57f3146388e9a72512a0f672d6670a0933f46430d6232726ac535e53b07a216d"
+    },
+    {
+      "path": "tokens/hplx.json",
+      "role": {
+        "kind": "tokens",
+        "format": "json",
+        "note": "kit-specific JSON; includes a native section in px, fractions, characters, bezier points and colour floats"
+      },
+      "generated_by": "vendor/brand/scripts/family.mjs",
+      "sha256": "920f76c7c85e70cab3f5b7c1bc54532bbed3be004faef857e5e9756ffe0be80e"
+    },
+    {
+      "path": "tokens/hplx.tokens.json",
+      "role": {
+        "kind": "tokens",
+        "format": "dtcg"
+      },
+      "generated_by": "vendor/brand/scripts/family.mjs",
+      "sha256": "d50629864934d9f555c37e2c3541f698c3e0e743fffb8dfdaf6330324a4ee93b"
+    },
+    {
+      "path": "tokens/hplx_tokens.rs",
+      "role": {
+        "kind": "tokens",
+        "format": "rust"
+      },
+      "generated_by": "vendor/brand/scripts/family.mjs",
+      "sha256": "d1b9a53fc5e5ce9183952c9e08531fdeaa6049e3840495db646baa98a608544e"
+    },
+    {
+      "path": "tokens/README.md",
+      "role": {
+        "kind": "documentation",
+        "format": "markdown"
+      },
+      "sha256": "1fed396ca282f6280cb194828bf5015333e3a078eb04b7787815a32483109160",
+      "editable": true
+    }
+  ],
+  "glimmer_assets": [
+    {
+      "path": "assets/hplx-glimmer-black.svg",
+      "sha256": "512289d25e9ce2512f4ed44bd4ee14b328d0adc75aaf0af52fd028243503ede3",
+      "generated_by": "scripts/build-glimmer-assets.mjs",
+      "viewBox": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "visible_bounds_xywh": [
+        8,
+        6,
+        48,
+        54
+      ]
+    },
+    {
+      "path": "assets/hplx-glimmer-currentColor.svg",
+      "sha256": "87bf9db1ea1300f7e4c0a9bf8cbd624bd945c2d8b205dbaafbe993a98cb7e3b3",
+      "generated_by": "scripts/build-glimmer-assets.mjs",
+      "viewBox": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "visible_bounds_xywh": [
+        8,
+        6,
+        48,
+        54
+      ]
+    },
+    {
+      "path": "assets/hplx-glimmer-dark.svg",
+      "sha256": "4e62f4c11e5e84ec17d7d0705aba472767596aede653f4211a4dfeca26b680d7",
+      "generated_by": "scripts/build-glimmer-assets.mjs",
+      "viewBox": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "visible_bounds_xywh": [
+        8,
+        6,
+        48,
+        54
+      ]
+    },
+    {
+      "path": "assets/hplx-glimmer-light.svg",
+      "sha256": "7e19dd4f686c248b174831f569b94b71247e673ff5db1dbea7a767b2c6ef45e0",
+      "generated_by": "scripts/build-glimmer-assets.mjs",
+      "viewBox": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "visible_bounds_xywh": [
+        8,
+        6,
+        48,
+        54
+      ]
+    },
+    {
+      "path": "assets/hplx-glimmer-lockup-black.svg",
+      "sha256": "e9d1a2cfbbfbfd26e6257330eae5638da118231db15da25b6ce89f90a569833f",
+      "generated_by": "scripts/build-glimmer-assets.mjs",
+      "viewBox": [
+        0,
+        0,
+        192,
+        64
+      ],
+      "visible_bounds_xywh": [
+        8,
+        6,
+        178.892,
+        54
+      ]
+    },
+    {
+      "path": "assets/hplx-glimmer-lockup-currentColor.svg",
+      "sha256": "447070d695965df9ef4216e5c395c42dbc0a64ea0d844127fd4be1028d72ca9a",
+      "generated_by": "scripts/build-glimmer-assets.mjs",
+      "viewBox": [
+        0,
+        0,
+        192,
+        64
+      ],
+      "visible_bounds_xywh": [
+        8,
+        6,
+        178.892,
+        54
+      ]
+    },
+    {
+      "path": "assets/hplx-glimmer-lockup-dark.svg",
+      "sha256": "0c96db08d97f510e519ab24356b92f0fe9b56ba4a1f9cb7d2704ece34121ef3d",
+      "generated_by": "scripts/build-glimmer-assets.mjs",
+      "viewBox": [
+        0,
+        0,
+        192,
+        64
+      ],
+      "visible_bounds_xywh": [
+        8,
+        6,
+        178.892,
+        54
+      ]
+    },
+    {
+      "path": "assets/hplx-glimmer-lockup-light.svg",
+      "sha256": "a333d34d5a8a8c12369ece1646b9c5f7e1b06f9a0dd18d46c69855fa75fd94e7",
+      "generated_by": "scripts/build-glimmer-assets.mjs",
+      "viewBox": [
+        0,
+        0,
+        192,
+        64
+      ],
+      "visible_bounds_xywh": [
+        8,
+        6,
+        178.892,
+        54
+      ]
+    },
+    {
+      "path": "assets/hplx-glimmer-lockup-white.svg",
+      "sha256": "80cbad23c6ef6af3d41454a4e420b14d17687ac06619ac1363981e97f08eba52",
+      "generated_by": "scripts/build-glimmer-assets.mjs",
+      "viewBox": [
+        0,
+        0,
+        192,
+        64
+      ],
+      "visible_bounds_xywh": [
+        8,
+        6,
+        178.892,
+        54
+      ]
+    },
+    {
+      "path": "assets/hplx-glimmer-white.svg",
+      "sha256": "fd20079b4f735a8242438e095da14f4c981f25397c80343c776f9424606473b5",
+      "generated_by": "scripts/build-glimmer-assets.mjs",
+      "viewBox": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "visible_bounds_xywh": [
+        8,
+        6,
+        48,
+        54
+      ]
+    },
+    {
+      "path": "assets/glimmer.source.json",
+      "sha256": "1857e5d361852d8386aeaf75c457ae58c3ce09f6b3db5de3c406e917612372d8",
+      "editable": true
+    },
+    {
+      "path": "EMBER-HISTORICAL.md",
+      "sha256": "d0167d252bc761feb123299940e3c194fd78325c63a662077db8d21e7c71ab27",
+      "editable": true,
+      "role": {
+        "kind": "documentation"
+      }
+    }
+  ],
+  "assets": [
+    {
+      "path": "README.md",
+      "role": {
+        "kind": "documentation"
+      },
+      "status": "HPLX family guide: Glimmer approved (owner, 2026-10-17); theme approved (owner, 2026-10-15)",
+      "sha256": "5efbe258dc332a2bf0d5f5a463f288cc451fe131d9c7fbd4355c35ff10885389",
+      "editable": true
+    },
+    {
+      "path": "assets/ember.source.json",
+      "role": {
+        "kind": "selected-symbol-source"
+      },
+      "status": "Owner-selected original Ember; immutable reconstruction source checksum",
+      "sha256": "a3f037c74454b63f242cc27ed1c8af78d668bf1e1fb0e226eae46fd3cc5cb355",
+      "deprecated": true
+    },
+    {
+      "path": "assets/hplx-ember-amber.svg",
+      "role": {
+        "kind": "family-identity",
+        "format": "svg"
+      },
+      "status": "Selected Ember symbol; faithful derived delivery",
+      "sha256": "887fbc9a070ea50a8323cb464219f27f279cd82293eb88e7168106acc8ab306d",
+      "viewBox": [
+        135,
+        289,
+        400,
+        150
+      ],
+      "visible_bounds_xywh": [
+        140.232,
+        294.205,
+        389.56,
+        140.221
+      ],
+      "generated_by": "scripts/build-hplx-assets.mjs",
+      "deprecated": true
+    },
+    {
+      "path": "assets/hplx-ember-bone.svg",
+      "role": {
+        "kind": "family-identity",
+        "format": "svg"
+      },
+      "status": "Selected Ember symbol; faithful derived delivery",
+      "sha256": "16b130f69215052188e6eef31f3ef8b6dee1aa0891a4bb5005a54cc2e6ec9601",
+      "viewBox": [
+        135,
+        289,
+        400,
+        150
+      ],
+      "visible_bounds_xywh": [
+        140.232,
+        294.205,
+        389.56,
+        140.221
+      ],
+      "generated_by": "scripts/build-hplx-assets.mjs",
+      "deprecated": true
+    },
+    {
+      "path": "assets/hplx-ember-ink.svg",
+      "role": {
+        "kind": "family-identity",
+        "format": "svg"
+      },
+      "status": "Selected Ember symbol; faithful derived delivery",
+      "sha256": "e167df5e68985454fea41963bea5356ba36685d67f18e0c6971137556d3c9557",
+      "viewBox": [
+        135,
+        289,
+        400,
+        150
+      ],
+      "visible_bounds_xywh": [
+        140.232,
+        294.205,
+        389.56,
+        140.221
+      ],
+      "generated_by": "scripts/build-hplx-assets.mjs",
+      "deprecated": true
+    },
+    {
+      "path": "assets/hplx-ember-primary.svg",
+      "role": {
+        "kind": "family-identity",
+        "format": "svg"
+      },
+      "status": "Selected Ember symbol; faithful derived delivery",
+      "sha256": "da6f6c37a7e7e83bb409510c2d47beaf57b86f80f467b8fbec93c3ede8806426",
+      "viewBox": [
+        79,
+        108,
+        512,
+        512
+      ],
+      "visible_bounds_xywh": [
+        79,
+        108,
+        512,
+        512
+      ],
+      "generated_by": "scripts/build-hplx-assets.mjs",
+      "deprecated": true
+    },
+    {
+      "path": "assets/png/hplx-ember-amber-1024x384.png",
+      "role": {
+        "kind": "family-identity",
+        "format": "png"
+      },
+      "status": "Selected Ember symbol; faithful derived delivery",
+      "sha256": "5bee9e0d78132b81b3d560144036e8af213a98eee2ee677a509710a4ab0a5153",
+      "dimensions_px": [
+        1024,
+        384
+      ],
+      "generated_by": "scripts/build-hplx-assets.mjs",
+      "deprecated": true
+    },
+    {
+      "path": "assets/png/hplx-ember-bone-1024x384.png",
+      "role": {
+        "kind": "family-identity",
+        "format": "png"
+      },
+      "status": "Selected Ember symbol; faithful derived delivery",
+      "sha256": "85bd572a6f4ccbb3efe22a175a43f60ff5530b12c0c354e43069968798c4e611",
+      "dimensions_px": [
+        1024,
+        384
+      ],
+      "generated_by": "scripts/build-hplx-assets.mjs",
+      "deprecated": true
+    },
+    {
+      "path": "assets/png/hplx-ember-ink-1024x384.png",
+      "role": {
+        "kind": "family-identity",
+        "format": "png"
+      },
+      "status": "Selected Ember symbol; faithful derived delivery",
+      "sha256": "9e138527515503118d8dbf8e0a104577b874b8a30b2538c0a2cb0648d0b15b1a",
+      "dimensions_px": [
+        1024,
+        384
+      ],
+      "generated_by": "scripts/build-hplx-assets.mjs",
+      "deprecated": true
+    },
+    {
+      "path": "assets/png/hplx-ember-primary-1024.png",
+      "role": {
+        "kind": "family-identity",
+        "format": "png"
+      },
+      "status": "Selected Ember symbol; faithful derived delivery",
+      "sha256": "96ae21959141269380c1b062dbf3958c39cdbb4ad17f1235f9e367bcccf8561f",
+      "dimensions_px": [
+        1024,
+        1024
+      ],
+      "generated_by": "scripts/build-hplx-assets.mjs",
+      "deprecated": true
+    },
+    {
+      "path": "assets/png/hplx-ember-primary-128.png",
+      "role": {
+        "kind": "family-identity",
+        "format": "png"
+      },
+      "status": "Selected Ember symbol; faithful derived delivery",
+      "sha256": "32ee12b721407d11ea87b8166e5ce07103aa25606b5807e193f6fda6c6d28570",
+      "dimensions_px": [
+        128,
+        128
+      ],
+      "generated_by": "scripts/build-hplx-assets.mjs",
+      "deprecated": true
+    },
+    {
+      "path": "assets/png/hplx-ember-primary-16.png",
+      "role": {
+        "kind": "family-identity",
+        "format": "png"
+      },
+      "status": "Selected Ember symbol; faithful derived delivery",
+      "sha256": "b4b4c3efafd481b1cd6b4507959b88622eb01aa9124fa927655736ae39570ecd",
+      "dimensions_px": [
+        16,
+        16
+      ],
+      "generated_by": "scripts/build-hplx-assets.mjs",
+      "deprecated": true
+    },
+    {
+      "path": "assets/png/hplx-ember-primary-24.png",
+      "role": {
+        "kind": "family-identity",
+        "format": "png"
+      },
+      "status": "Selected Ember symbol; faithful derived delivery",
+      "sha256": "55bea93070b8324b3042308e1b19d8357520cf80566415cc421b8bff53dca7c1",
+      "dimensions_px": [
+        24,
+        24
+      ],
+      "generated_by": "scripts/build-hplx-assets.mjs",
+      "deprecated": true
+    },
+    {
+      "path": "assets/png/hplx-ember-primary-256.png",
+      "role": {
+        "kind": "family-identity",
+        "format": "png"
+      },
+      "status": "Selected Ember symbol; faithful derived delivery",
+      "sha256": "8cea979606c1b87c9e2e7ae841463a9c89509912d56841c2a8348506633766c7",
+      "dimensions_px": [
+        256,
+        256
+      ],
+      "generated_by": "scripts/build-hplx-assets.mjs",
+      "deprecated": true
+    },
+    {
+      "path": "assets/png/hplx-ember-primary-32.png",
+      "role": {
+        "kind": "family-identity",
+        "format": "png"
+      },
+      "status": "Selected Ember symbol; faithful derived delivery",
+      "sha256": "aed3ed4fdbce5aa8351e0e1650dba6aeb271eebf7d1401f7e930980e5ee233f0",
+      "dimensions_px": [
+        32,
+        32
+      ],
+      "generated_by": "scripts/build-hplx-assets.mjs",
+      "deprecated": true
+    },
+    {
+      "path": "assets/png/hplx-ember-primary-48.png",
+      "role": {
+        "kind": "family-identity",
+        "format": "png"
+      },
+      "status": "Selected Ember symbol; faithful derived delivery",
+      "sha256": "29e1251503d3570943564654a4f20a7546629c5444dc0c64e233b4dcad8b5016",
+      "dimensions_px": [
+        48,
+        48
+      ],
+      "generated_by": "scripts/build-hplx-assets.mjs",
+      "deprecated": true
+    },
+    {
+      "path": "assets/png/hplx-ember-primary-512.png",
+      "role": {
+        "kind": "family-identity",
+        "format": "png"
+      },
+      "status": "Selected Ember symbol; faithful derived delivery",
+      "sha256": "d7b12f387ac4968894e9cb1011ca94b8aa6721fe87b302e0bb626ffa05f10e36",
+      "dimensions_px": [
+        512,
+        512
+      ],
+      "generated_by": "scripts/build-hplx-assets.mjs",
+      "deprecated": true
+    },
+    {
+      "path": "assets/png/hplx-ember-primary-64.png",
+      "role": {
+        "kind": "family-identity",
+        "format": "png"
+      },
+      "status": "Selected Ember symbol; faithful derived delivery",
+      "sha256": "39f731abf4eaaf5da04643b12898950503a20b58318553e032a36928c5fce90a",
+      "dimensions_px": [
+        64,
+        64
+      ],
+      "generated_by": "scripts/build-hplx-assets.mjs",
+      "deprecated": true
+    },
+    {
+      "path": "assets/png/hplx-ember-primary-96.png",
+      "role": {
+        "kind": "family-identity",
+        "format": "png"
+      },
+      "status": "Selected Ember symbol; faithful derived delivery",
+      "sha256": "597e2751791e970dcc6d6aa86470e63292a720642d940577158b8c95aae440fe",
+      "dimensions_px": [
+        96,
+        96
+      ],
+      "generated_by": "scripts/build-hplx-assets.mjs",
+      "deprecated": true
+    },
+    {
+      "path": "assets/ember-small.source.json",
+      "role": {
+        "kind": "family-identity",
+        "small": true,
+        "format": "source"
+      },
+      "status": "Optical small-size redraw; accepted (owner, 2026-10-11)",
+      "sha256": "e3739cc6d9a4fbf636329b5af9d5e99e684926af8460e6549dd67935e430dbc5",
+      "editable": true,
+      "deprecated": true
+    },
+    {
+      "path": "assets/hplx-ember-small.svg",
+      "role": {
+        "kind": "family-identity",
+        "small": true,
+        "format": "svg",
+        "grid_px": 32
+      },
+      "status": "Optical small-size redraw; accepted (owner, 2026-10-11)",
+      "sha256": "1bd01c6ee7123a09a78ed6a5cce97892ece5d11c36189819040ae9a18948cbb0",
+      "viewBox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "visible_bounds_xywh": [
+        2,
+        7.5,
+        28,
+        16.5
+      ],
+      "generated_by": "scripts/build-hplx-assets.mjs",
+      "deprecated": true
+    },
+    {
+      "path": "assets/png/hplx-ember-small-16.png",
+      "role": {
+        "kind": "family-identity",
+        "small": true,
+        "format": "png"
+      },
+      "status": "Optical small-size redraw; accepted (owner, 2026-10-11)",
+      "sha256": "242c3999cfc7e0c1505c7057d2e2820c8ef996838dbd92f01cbe58b6999ea111",
+      "dimensions_px": [
+        16,
+        16
+      ],
+      "generated_by": "scripts/build-hplx-assets.mjs",
+      "deprecated": true
+    },
+    {
+      "path": "assets/png/hplx-ember-small-24.png",
+      "role": {
+        "kind": "family-identity",
+        "small": true,
+        "format": "png"
+      },
+      "status": "Optical small-size redraw; accepted (owner, 2026-10-11)",
+      "sha256": "7a43ef95e571ae6506fadfb9570f5dfa9aae378bcc3de35f1e17d97be0e55311",
+      "dimensions_px": [
+        24,
+        24
+      ],
+      "generated_by": "scripts/build-hplx-assets.mjs",
+      "deprecated": true
+    },
+    {
+      "path": "assets/png/hplx-ember-small-32.png",
+      "role": {
+        "kind": "family-identity",
+        "small": true,
+        "format": "png"
+      },
+      "status": "Optical small-size redraw; accepted (owner, 2026-10-11)",
+      "sha256": "cb620755ae62f47681f50feaea53cefe44f7f1a38b2f9e0b33ecc4b24f550066",
+      "dimensions_px": [
+        32,
+        32
+      ],
+      "generated_by": "scripts/build-hplx-assets.mjs",
+      "deprecated": true
+    },
+    {
+      "path": "assets/png/hplx-ember-small-48.png",
+      "role": {
+        "kind": "family-identity",
+        "small": true,
+        "format": "png"
+      },
+      "status": "Optical small-size redraw; accepted (owner, 2026-10-11)",
+      "sha256": "bf333e8817650f9fdd55e90c63e80eb14f039d9fb56d9cbd8bb30cefe2f14cae",
+      "dimensions_px": [
+        48,
+        48
+      ],
+      "generated_by": "scripts/build-hplx-assets.mjs",
+      "deprecated": true
+    },
+    {
+      "path": "assets/hplx-lockup.source.json",
+      "role": {
+        "kind": "family-identity",
+        "lockup": true,
+        "format": "source"
+      },
+      "status": "Owner-chosen lettering; lockup accepted (owner, 2026-10-11)",
+      "sha256": "58cf7f6abb7fa93d48177d57f50cf11a82c02bbd644264fda031ac47aed43648",
+      "editable": true
+    },
+    {
+      "path": "assets/hplx-lockup-primary.svg",
+      "role": {
+        "kind": "family-identity",
+        "lockup": true,
+        "variant": "primary",
+        "colours": "amber symbol, bone letters, dark plate",
+        "format": "svg"
+      },
+      "status": "Owner-chosen lettering; lockup accepted (owner, 2026-10-11)",
+      "sha256": "85593e9286465d522f3982595f799c957cac0beba6ac2130a034457ff6a21438",
+      "viewBox": [
+        0,
+        0,
+        2172,
+        724
+      ],
+      "visible_bounds_xywh": [
+        752.903,
+        180.868,
+        666.194,
+        362.264
+      ],
+      "generated_by": "scripts/build-hplx-lockup.mjs"
+    },
+    {
+      "path": "assets/hplx-lockup-amber.svg",
+      "role": {
+        "kind": "family-identity",
+        "lockup": true,
+        "variant": "amber",
+        "colours": "amber symbol, bone letters, transparent",
+        "format": "svg"
+      },
+      "status": "Owner-chosen lettering; lockup accepted (owner, 2026-10-11)",
+      "sha256": "4f391fb5abe37c4376d96e37b5700b206989093f82cc14432be54644fa26a094",
+      "viewBox": [
+        0,
+        0,
+        2172,
+        724
+      ],
+      "visible_bounds_xywh": [
+        752.903,
+        180.868,
+        666.194,
+        362.264
+      ],
+      "generated_by": "scripts/build-hplx-lockup.mjs"
+    },
+    {
+      "path": "assets/hplx-lockup-bone.svg",
+      "role": {
+        "kind": "family-identity",
+        "lockup": true,
+        "variant": "bone",
+        "colours": "bone, transparent",
+        "format": "svg"
+      },
+      "status": "Owner-chosen lettering; lockup accepted (owner, 2026-10-11)",
+      "sha256": "acf1d2c88d6f09ff2572af7ea6e4bbc9a6b8fd39a28850050ddee7c361f4ba1f",
+      "viewBox": [
+        0,
+        0,
+        2172,
+        724
+      ],
+      "visible_bounds_xywh": [
+        752.903,
+        180.868,
+        666.194,
+        362.264
+      ],
+      "generated_by": "scripts/build-hplx-lockup.mjs"
+    },
+    {
+      "path": "assets/hplx-lockup-ink.svg",
+      "role": {
+        "kind": "family-identity",
+        "lockup": true,
+        "variant": "ink",
+        "colours": "ink, transparent",
+        "format": "svg"
+      },
+      "status": "Owner-chosen lettering; lockup accepted (owner, 2026-10-11)",
+      "sha256": "f8d01240c710b17c9e43abf8df8a74ee4835c19f54e2127496056861ca7cb326",
+      "viewBox": [
+        0,
+        0,
+        2172,
+        724
+      ],
+      "visible_bounds_xywh": [
+        752.903,
+        180.868,
+        666.194,
+        362.264
+      ],
+      "generated_by": "scripts/build-hplx-lockup.mjs"
+    },
+    {
+      "path": "assets/png/hplx-lockup-primary-2172x724.png",
+      "role": {
+        "kind": "family-identity",
+        "lockup": true,
+        "variant": "primary",
+        "colours": "amber symbol, bone letters, dark plate",
+        "format": "png"
+      },
+      "status": "Owner-chosen lettering; lockup accepted (owner, 2026-10-11)",
+      "sha256": "4beb0fbd0faecd910a6fdea59c4c89667c99c27fa2271cac1bf028122aa6adb5",
+      "dimensions_px": [
+        2172,
+        724
+      ],
+      "generated_by": "scripts/build-hplx-lockup.mjs"
+    },
+    {
+      "path": "assets/png/hplx-lockup-primary-1024x341.png",
+      "role": {
+        "kind": "family-identity",
+        "lockup": true,
+        "variant": "primary",
+        "colours": "amber symbol, bone letters, dark plate",
+        "format": "png"
+      },
+      "status": "Owner-chosen lettering; lockup accepted (owner, 2026-10-11)",
+      "sha256": "02ee3d712bac629952b400a8810f245cfa9fe61e9ca5122c383c257b39811328",
+      "dimensions_px": [
+        1024,
+        341
+      ],
+      "generated_by": "scripts/build-hplx-lockup.mjs"
+    },
+    {
+      "path": "assets/png/hplx-lockup-amber-2172x724.png",
+      "role": {
+        "kind": "family-identity",
+        "lockup": true,
+        "variant": "amber",
+        "colours": "amber symbol, bone letters, transparent",
+        "format": "png"
+      },
+      "status": "Owner-chosen lettering; lockup accepted (owner, 2026-10-11)",
+      "sha256": "d59d5c0f94166103a7a8a5a16ce65418dac095a1dd17e5ae716673ae2062cf67",
+      "dimensions_px": [
+        2172,
+        724
+      ],
+      "generated_by": "scripts/build-hplx-lockup.mjs"
+    },
+    {
+      "path": "assets/png/hplx-lockup-amber-1024x341.png",
+      "role": {
+        "kind": "family-identity",
+        "lockup": true,
+        "variant": "amber",
+        "colours": "amber symbol, bone letters, transparent",
+        "format": "png"
+      },
+      "status": "Owner-chosen lettering; lockup accepted (owner, 2026-10-11)",
+      "sha256": "486eb0179d43bd2a17dc03bad24f7e14503c88642162091e3d20b9679e533e88",
+      "dimensions_px": [
+        1024,
+        341
+      ],
+      "generated_by": "scripts/build-hplx-lockup.mjs"
+    },
+    {
+      "path": "assets/png/hplx-lockup-bone-2172x724.png",
+      "role": {
+        "kind": "family-identity",
+        "lockup": true,
+        "variant": "bone",
+        "colours": "bone, transparent",
+        "format": "png"
+      },
+      "status": "Owner-chosen lettering; lockup accepted (owner, 2026-10-11)",
+      "sha256": "113e7684b281a09ab036329df7dec26f99576c0e9ea6707675f9c100a7fc1ff2",
+      "dimensions_px": [
+        2172,
+        724
+      ],
+      "generated_by": "scripts/build-hplx-lockup.mjs"
+    },
+    {
+      "path": "assets/png/hplx-lockup-bone-1024x341.png",
+      "role": {
+        "kind": "family-identity",
+        "lockup": true,
+        "variant": "bone",
+        "colours": "bone, transparent",
+        "format": "png"
+      },
+      "status": "Owner-chosen lettering; lockup accepted (owner, 2026-10-11)",
+      "sha256": "fade604331c9612fb82ac9cfbeb109b11adb5adbc11aab01e2c3536d8b13182b",
+      "dimensions_px": [
+        1024,
+        341
+      ],
+      "generated_by": "scripts/build-hplx-lockup.mjs"
+    },
+    {
+      "path": "assets/png/hplx-lockup-ink-2172x724.png",
+      "role": {
+        "kind": "family-identity",
+        "lockup": true,
+        "variant": "ink",
+        "colours": "ink, transparent",
+        "format": "png"
+      },
+      "status": "Owner-chosen lettering; lockup accepted (owner, 2026-10-11)",
+      "sha256": "7aa156cb1a566af840f86e875f8aba564fa30e21c76d03453565173b6324615b",
+      "dimensions_px": [
+        2172,
+        724
+      ],
+      "generated_by": "scripts/build-hplx-lockup.mjs"
+    },
+    {
+      "path": "assets/png/hplx-lockup-ink-1024x341.png",
+      "role": {
+        "kind": "family-identity",
+        "lockup": true,
+        "variant": "ink",
+        "colours": "ink, transparent",
+        "format": "png"
+      },
+      "status": "Owner-chosen lettering; lockup accepted (owner, 2026-10-11)",
+      "sha256": "de937cd93abd7809ea30a32b8a93c4bf734f63659c49f72369eeb995d0de2863",
+      "dimensions_px": [
+        1024,
+        341
+      ],
+      "generated_by": "scripts/build-hplx-lockup.mjs"
+    },
+    {
+      "path": "icons/hplx-ember-512.png",
+      "role": {
+        "kind": "family-identity",
+        "format": "png"
+      },
+      "status": "Selected Ember symbol; faithful derived delivery",
+      "sha256": "843f03e1d258b858eb9d76c5b6af147a1b7be067d18c93c0caf6521300dc9b9d",
+      "dimensions_px": [
+        512,
+        512
+      ],
+      "generated_by": "scripts/build-icons.mjs",
+      "deprecated": true
+    },
+    {
+      "path": "icons/hplx-ember-apple-touch-180.png",
+      "role": {
+        "kind": "family-identity",
+        "format": "png"
+      },
+      "status": "Selected Ember symbol; faithful derived delivery",
+      "sha256": "13099929572583b5ecd2cc910651f1cf94d9d3ecbd9cf63b7aa34d71ebaaf890",
+      "dimensions_px": [
+        180,
+        180
+      ],
+      "generated_by": "scripts/build-icons.mjs",
+      "deprecated": true
+    },
+    {
+      "path": "icons/hplx-ember.icns",
+      "role": {
+        "kind": "family-identity",
+        "format": "icns"
+      },
+      "status": "Selected Ember symbol; faithful derived delivery",
+      "sha256": "567b1f1f3a8af8e178c61b7f0a444d6efc120e9433ad7b3b47141575ea525bdf",
+      "generated_by": "scripts/build-icons.mjs",
+      "deprecated": true
+    },
+    {
+      "path": "icons/hplx-ember.ico",
+      "role": {
+        "kind": "family-identity",
+        "format": "ico"
+      },
+      "status": "Selected Ember symbol; faithful derived delivery",
+      "sha256": "5760eda78675731ef54db987b35b8e65acaffe09f6ddfb2aa03549e4fe12d76a",
+      "generated_by": "scripts/build-icons.mjs",
+      "deprecated": true
+    }
+  ],
+  "web_fonts": [
+    {
+      "path": "fonts/web/Spectral-SemiBold.woff2",
+      "family": "Spectral",
+      "weight": 600,
+      "style": "normal",
+      "format": "woff2",
+      "license": "SIL Open Font License 1.1",
+      "license_file": "fonts/licenses/Spectral-OFL.txt",
+      "generated_by": "scripts/build-web-fonts.mjs",
+      "sha256": "6cd6a939159630d0ac1a532f6091df645dcd2025cfe94a1374c529b894a8b058",
+      "derived_from": "fonts/desktop/Spectral-SemiBold.ttf"
+    }
+  ],
+  "desktop_fonts": [
+    {
+      "path": "fonts/desktop/Spectral-SemiBold.ttf",
+      "family": "Spectral",
+      "weight": 600,
+      "style": "normal",
+      "format": "truetype",
+      "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/spectral/Spectral-SemiBold.ttf",
+      "license": "SIL Open Font License 1.1",
+      "license_file": "fonts/licenses/Spectral-OFL.txt",
+      "sha256": "5f86915a744832ecf6e4a17ab04bea091b9fa992ef5164ff65ae34c1da2fe94b"
+    }
+  ],
+  "font_licenses": [
+    {
+      "path": "fonts/licenses/Spectral-OFL.txt",
+      "sha256": "501d6ceca8e552630fe3aa9442b9a818565680a1a2f79f3fb8c13d6f309a9e98"
+    }
+  ],
+  "repository_license": {
+    "path": "LICENSE.md",
+    "sha256": "e9102f55a25795d7deeb451bf2036449d8b9f66771b31a64ac29d4df1b9da74f"
+  },
+  "vendor": {
+    "repository": "cosmiklabs/brand",
+    "tag": "v0.8.0",
+    "commit": "e416514a291fb71844280f7cf1e2759d195b7a4d",
+    "lock": {
+      "path": "vendor/brand/brand.lock.json",
+      "sha256": "491d225e4be90431e7e6d829005b87a894b14ec546429b4ff40799cc8944cb19"
+    },
+    "files": [
+      {
+        "path": "vendor/brand/LICENSE.md",
+        "sha256": "12ec3364762237764fac36cfc13ee736b398e67242ec7cf04ad65a08e09bd47c"
+      },
+      {
+        "path": "vendor/brand/fonts/desktop/IBMPlexMono-Regular.ttf",
+        "sha256": "7c6fbddca4b700be918f5f6183d9bd4464fa427fe435f0b480d77fe2bb8c5a43"
+      },
+      {
+        "path": "vendor/brand/fonts/desktop/Inter-Medium.ttf",
+        "sha256": "97ad806f526e41546d46365bb3a393145f75b7b1568913db74549ad8b8dba872"
+      },
+      {
+        "path": "vendor/brand/fonts/desktop/Inter-Regular.ttf",
+        "sha256": "40d692fce188e4471e2b3cba937be967878f631ad3ebbbdcd587687c7ebe0c82"
+      },
+      {
+        "path": "vendor/brand/fonts/desktop/Inter-SemiBold.ttf",
+        "sha256": "78a843fade9d4612a5567302fb595b56976eb5fcebf4fea5a5912d638bafcde3"
+      },
+      {
+        "path": "vendor/brand/fonts/licenses/IBM-Plex-OFL.txt",
+        "sha256": "7e6b2818edbd8f6a01ae80641cc8f16a51080d08fb4e532be3a0b6f74adb07da"
+      },
+      {
+        "path": "vendor/brand/fonts/licenses/Inter-OFL.txt",
+        "sha256": "262481e844521b326f5ecd053e59b98c8b2da78c8ee1bdbb6e8174305e54935a"
+      },
+      {
+        "path": "vendor/brand/fonts/web/IBMPlexMono-Regular.ttf",
+        "sha256": "7c6fbddca4b700be918f5f6183d9bd4464fa427fe435f0b480d77fe2bb8c5a43"
+      },
+      {
+        "path": "vendor/brand/fonts/web/IBMPlexMono-Regular.woff2",
+        "sha256": "7eb6057e1f34f8e2d90466e25d18b21c23a9c4b1837e6c668490cc007e8aa809"
+      },
+      {
+        "path": "vendor/brand/fonts/web/Inter-Medium.woff2",
+        "sha256": "0ff3e94614e1493eb556314fd247ae6c4a85a7783b4cc86be539940cf83f2a48"
+      },
+      {
+        "path": "vendor/brand/fonts/web/Inter-Regular.woff2",
+        "sha256": "e06f6b1bc553aaea4e4668023ed0ab0a147129c3107f511bc7d03d361b0ae085"
+      },
+      {
+        "path": "vendor/brand/fonts/web/Inter-SemiBold.woff2",
+        "sha256": "5cb7103e4e605989afebc03d989c79201e54b21b5183db33981f70db9178a301"
+      },
+      {
+        "path": "vendor/brand/guide/README.md",
+        "sha256": "d70cfa36b05ef677ad36ea36d7c9a5112995fdecd070697a64c45ba5f0bf014d"
+      },
+      {
+        "path": "vendor/brand/guide/colour.md",
+        "sha256": "5a39725b944e9d878ae34d088766619da943401281d008c41938cc35117d84fd"
+      },
+      {
+        "path": "vendor/brand/guide/documents.md",
+        "sha256": "59dec563aec125801b3671090ef221f7f1a6e62d2686175fddf0c3767bc6da58"
+      },
+      {
+        "path": "vendor/brand/guide/families.md",
+        "sha256": "e05be80d1ffabcc32cd776c8d5a2b2a228e4d4319448a88b3a233b5e929e0e5a"
+      },
+      {
+        "path": "vendor/brand/guide/governance.md",
+        "sha256": "068be100cae80a4662fe421cf199a1997cbed88c2801715ce37110d84cee0a4f"
+      },
+      {
+        "path": "vendor/brand/guide/identity.md",
+        "sha256": "7d360224a1bc3e9e76333ec82314065626205d6bb9762f8cc15d9f49ffee78a9"
+      },
+      {
+        "path": "vendor/brand/guide/interface.md",
+        "sha256": "e4a94eff40209f742ef254f27fbd3058859ecd98d98f7a5b5d1da80f241c9ab7"
+      },
+      {
+        "path": "vendor/brand/guide/motion.md",
+        "sha256": "03cd72658c0a19fbe10dbb6160baaab63131d66fa92df6de476ae2390b6a5481"
+      },
+      {
+        "path": "vendor/brand/guide/quality.md",
+        "sha256": "2adcfd41608459347fa13aeac353089c7f04a99b8c6896c5875c038ad334f8db"
+      },
+      {
+        "path": "vendor/brand/guide/typography.md",
+        "sha256": "067eb036d5169a3caa5a852a0aa18cd590215a810816aadd9d605c836d2eb7aa"
+      },
+      {
+        "path": "vendor/brand/guide/voice.md",
+        "sha256": "b625d99a571bd119deaa2a2ee8bdfb1db1008c5b76020a60c492b804cfd429b6"
+      },
+      {
+        "path": "vendor/brand/kits/cosmik/components/controls.css",
+        "sha256": "30946c47d8d5fe83889d885ba256e2f554e155e81560943eec67880e4024be6d"
+      },
+      {
+        "path": "vendor/brand/kits/cosmik/tokens/cosmik.css",
+        "sha256": "4eac5f6a397d2f95e30258fe9dca24df9837d8372fcf26df75eba289ab2b1abd"
+      },
+      {
+        "path": "vendor/brand/kits/cosmik/tokens/cosmik.json",
+        "sha256": "c19a4d47bdcaaba69895414640f5238e16895658a319596a3be1ba3a8da2df3a"
+      },
+      {
+        "path": "vendor/brand/kits/cosmik/tokens/cosmik.tokens.json",
+        "sha256": "3ee871f92f024251866e18bebf98ebba4db658b1d82733bd11599672b23dbcff"
+      },
+      {
+        "path": "vendor/brand/kits/cosmik/tokens/cosmik_tokens.rs",
+        "sha256": "01832e0e30194b290220c34c081d0ebc601f0003101eecb5d8a984a09a2f7982"
+      },
+      {
+        "path": "vendor/brand/kits/cosmik/tokens/source.json",
+        "sha256": "d714b23fd14cf179e300392274bf911a69acd1c062a480414bb189b7016a59ce"
+      },
+      {
+        "path": "vendor/brand/package.json",
+        "sha256": "b658b628572cadf0359ba6da3f76e84d25c92c76b85c11b8e18c41b14be7fee4"
+      },
+      {
+        "path": "vendor/brand/scripts/family.mjs",
+        "sha256": "bb15daf8094e62d915eeb0dfcd27bb7dbf16eb777d58023fddf50f7b499ee705"
+      },
+      {
+        "path": "vendor/brand/scripts/font-outlines.mjs",
+        "sha256": "ffc2040028804ec13cb8d9037886e1495be62a732a2ceaa0d557ff042913ab9f"
+      },
+      {
+        "path": "vendor/brand/scripts/generate-tokens.mjs",
+        "sha256": "8eaf19dc2d4345a8594ca865ec1e0d60e046fa11b307bb4d5f6db8951618c72d"
+      },
+      {
+        "path": "vendor/brand/scripts/validate-tokens.mjs",
+        "sha256": "d5cf6286c6fb2243aaf292bd8aca22dc22193dad3a8badaecf18a517d9b486be"
+      },
+      {
+        "path": "vendor/brand/scripts/vector-raster.mjs",
+        "sha256": "b20fc5fa33f210bb5b10c656b9f9653641c84c569d6ff903f0d983ef2d5a608c"
+      },
+      {
+        "path": "vendor/brand/scripts/vendor.mjs",
+        "sha256": "e330be66fd39e61357431e05d38738528caf09bca3f7633585ab01c45a199187"
+      }
+    ]
+  }
+}

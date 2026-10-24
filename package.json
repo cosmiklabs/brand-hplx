@@ -1,0 +1,16 @@
+{
+  "name": "@cosmiklabs/brand-hplx",
+  "version": "0.1.0",
+  "private": true,
+  "description": "The HPLX family of the Cosmik brand: tokens, Glimmer, historical Ember and Spectral, built on a pinned cosmiklabs/brand release.",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/check.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "check:reproducible": "node scripts/build.mjs --check"
+  }
+}

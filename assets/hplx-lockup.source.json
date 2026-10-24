@@ -13,7 +13,7 @@
   "cap_height_px": 136,
   "tracking_em": 0.14,
   "symbol": {
-    "source": "kits/hplx/assets/ember.source.json",
+    "source": "assets/ember.source.json",
     "width_of_wordmark": 0.66,
     "gap_cap_heights": 0.5
   }
