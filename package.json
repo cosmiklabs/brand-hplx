@@ -1,6 +1,6 @@
 {
   "name": "@cosmiklabs/brand-hplx",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "description": "The HPLX family of the Cosmik brand: tokens, Glimmer, historical Ember and Spectral, built on a pinned cosmiklabs/brand release.",
   "repository": {
