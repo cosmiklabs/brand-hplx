@@ -170,7 +170,7 @@
         "kind": "documentation",
         "format": "markdown"
       },
-      "sha256": "1fed396ca282f6280cb194828bf5015333e3a078eb04b7787815a32483109160",
+      "sha256": "00735cbf28541d432045282e79baa62cd9689ee9a5c1c2cc9dbfa8dce253e92a",
       "editable": true
     }
   ],
@@ -352,7 +352,7 @@
     },
     {
       "path": "EMBER-HISTORICAL.md",
-      "sha256": "d0167d252bc761feb123299940e3c194fd78325c63a662077db8d21e7c71ab27",
+      "sha256": "d3f8b20d4b485ac2d60b0a8930fe18d24f0517d2279204ed9e0e54d8eb3d3c1a",
       "editable": true,
       "role": {
         "kind": "documentation"
@@ -366,7 +366,7 @@
         "kind": "documentation"
       },
       "status": "HPLX family guide: Glimmer approved (owner, 2026-10-17); theme approved (owner, 2026-10-15)",
-      "sha256": "5efbe258dc332a2bf0d5f5a463f288cc451fe131d9c7fbd4355c35ff10885389",
+      "sha256": "6537d38893a9f56d621efd7c423797418d3c66275264dbe3755ea6771f5b0c2c",
       "editable": true
     },
     {

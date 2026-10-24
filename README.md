@@ -1,14 +1,20 @@
 # HPLX Glimmer
 
-Glimmer is the official HPLX symbol, selected and approved on 17 October 2026. A compact light above an enclosing shadow expresses the family’s light-and-dark motif. Use the exact approved paths in `glimmer.source.json`; do not reshape, stretch, rotate or add effects.
+This repository is the HPLX family of the Cosmik brand: the HPLX tokens, the Glimmer
+symbol and lockups, the historical Ember artwork and icons, and Spectral for HPLX
+headings. It builds on [`cosmiklabs/brand`](https://github.com/cosmiklabs/brand) v0.8.0,
+vendored at `vendor/brand/` and pinned by `vendor/brand/brand.lock.json`. See
+[Building on the Cosmik foundation](#building-on-the-cosmik-foundation).
+
+Glimmer is the official HPLX symbol, selected and approved on 17 October 2026. A compact light above an enclosing shadow expresses the family’s light-and-dark motif. Use the exact approved paths in `assets/glimmer.source.json`; do not reshape, stretch, rotate or add effects.
 
 ## Canonical assets
 
-- `hplx-glimmer-dark.svg`: the approved amber variant on dark surfaces.
-- `hplx-glimmer-light.svg`: the approved umber variant on light surfaces.
-- `hplx-glimmer-black.svg`, `hplx-glimmer-white.svg`: monochrome variants.
-- `hplx-glimmer-currentColor.svg`: inherits colour when inlined. External img elements do not inherit page text colour.
-- `hplx-glimmer-lockup-{dark,light,black,white,currentColor}.svg`: the approved horizontal pairing with HPLX outlined in Spectral SemiBold. Preserve the Spectral font notice in `fonts/licenses/Spectral-OFL.txt`.
+- `assets/hplx-glimmer-dark.svg`: the approved amber variant on dark surfaces.
+- `assets/hplx-glimmer-light.svg`: the approved umber variant on light surfaces.
+- `assets/hplx-glimmer-black.svg`, `assets/hplx-glimmer-white.svg`: monochrome variants.
+- `assets/hplx-glimmer-currentColor.svg`: inherits colour when inlined. External img elements do not inherit page text colour.
+- `assets/hplx-glimmer-lockup-{dark,light,black,white,currentColor}.svg`: the approved horizontal pairing with HPLX outlined in Spectral SemiBold. Preserve the Spectral font notice in `fonts/licenses/Spectral-OFL.txt`.
 
 The symbol has a 64×64 viewBox and visible bounds [8,6,48,54]. Keep at least 8 source units of clear space outside the visible mark. Recommended minimum symbol width is 24 CSS px; smaller exports require consumer-specific visual testing. Recommended lockup minimum width is 160 CSS px. Keep the exact approved geometry at every size; no optical redraw is implied.
 
@@ -22,14 +28,16 @@ The approved HPLX palette and Spectral headings are unchanged. When HPLX content
 
 Ember, its previous lockups and platform icons are deprecated historical assets, retained byte-for-byte so existing consumers do not break. Canonical manifest entry points now select Glimmer. See [historical Ember notes](EMBER-HISTORICAL.md) only for maintenance of old integrations. Existing Ember builders and tests remain to preserve those historical files. No platform icon package, optical redraw, splash, print proof or cross-browser conformance claim is included in this change.
 
-Brand artwork remains covered by the [brand-use policy](../../LICENSE.md#2-brand-marks-trademark-style-policy). Approval does not imply trademark registration or third-party rights clearance.
+Brand artwork remains covered by the [brand-use policy](LICENSE.md#2-brand-marks-trademark-style-policy). Approval does not imply trademark registration or third-party rights clearance.
+
+HPLX does not imply official affiliation with a game's original owner or one licence across all code and assets.
 
 ## Interface use
 
-Use the [consumer guide](../README.md) for theme, font and scope integration.
+Use the [consumer guide](https://github.com/cosmiklabs/brand/blob/v0.8.0/kits/README.md) for theme, font and scope integration.
 HPLX heading roles may use Spectral; navigation, forms and utility text stay Inter.
-Status tones supplement explicit words. Follow shared [interface](../../guide/interface.md),
-[motion](../../guide/motion.md) and [quality review](../../guide/quality.md) guidance
+Status tones supplement explicit words. Follow shared [interface](vendor/brand/guide/interface.md),
+[motion](vendor/brand/guide/motion.md) and [quality review](vendor/brand/guide/quality.md) guidance
 rather than inventing a separate animation or overlay system for the family.
 
 ### Approved editor density exception
@@ -38,3 +46,62 @@ The HPLX Editor's tool-panel density was approved separately: 28 px rows and
 13 px text by default, with 24 or 32 px density options and no target below
 24 × 24 px. This is specific to that application, not a shared control minimum
 or a prescribed layout for other consumers.
+
+## Building on the Cosmik foundation
+
+This family extends the Cosmik baseline under the
+[family contract](vendor/brand/guide/families.md). It never copies the contract,
+generator or contrast pairs: `vendor/brand/` is an unmodified copy of the
+`cosmiklabs/brand` release recorded in `vendor/brand/brand.lock.json` (repository,
+tag, commit and the SHA-256 of every file), and the build and checks run those
+vendored scripts.
+
+| Path | Holds |
+| --- | --- |
+| `tokens/family.json` | The HPLX token source; `extends` names the vendored baseline |
+| `tokens/hplx.{css,json,tokens.json}`, `tokens/hplx_tokens.rs` | Generated by `vendor/brand/scripts/family.mjs build .`; never edit |
+| `assets/`, `icons/` | Glimmer, Ember and their sources, exports and icons |
+| `fonts/` | Spectral SemiBold (desktop TTF, web WOFF2) and its OFL notice |
+| `vendor/brand/` | The Cosmik foundation: baseline tokens, controls, Inter and IBM Plex Mono, the guide and the family tools; never edit |
+| `scripts/`, `tests/` | The HPLX builders, `build.mjs`, `check.mjs`, the manifest verifier and tests |
+| `asset-manifest.json` | Every deliverable here and in `vendor/brand/`, with roles, status and SHA-256 |
+
+Requires Node.js 22 or later; there is nothing to install.
+
+```sh
+npm run build                # family build, HPLX builders, manifest hashes
+npm run check                # vendor verify, family check, manifest, tests
+node scripts/build.mjs --check   # rebuild from a clean commit; fail on any drift
+```
+
+### Updating the foundation
+
+1. Check out `cosmiklabs/brand` at the new release tag, with a clean tree, and read
+   its [changelog](https://github.com/cosmiklabs/brand/blob/v0.8.0/CHANGELOG.md).
+2. `node <brand>/scripts/vendor.mjs sync --from <brand> --into vendor/brand`
+   replaces `vendor/brand/` and its lock.
+3. If the baseline token version changed, update `extends` in `tokens/family.json`.
+4. `npm run build`, then `npm run check` and
+   `node vendor/brand/scripts/vendor.mjs verify vendor/brand --release <brand>`.
+5. Review the regenerated outputs (at least the provenance headers change) in both
+   themes, then commit `vendor/brand/`, the outputs and the manifest together.
+
+CI runs the checks on every push and pull request, and proves the lock against a
+checkout of the tag it records.
+
+### Consuming this repository
+
+Pin a commit or release of this repository, never a moving branch, and take files
+through `asset-manifest.json` from that same revision: `entry_points` names the
+canonical files, and every listed file carries its SHA-256. The manifest also lists
+every file of `vendor/brand/`, so a consumer such as the Cosmik website or the HPLX
+product gets the foundation layer (baseline CSS, controls, Inter and IBM Plex Mono
+with their notices) through this repository at the release `brand` names. Load
+`vendor/brand/kits/cosmik/tokens/cosmik.css`, then `tokens/hplx.css`, then
+optionally `vendor/brand/kits/cosmik/components/controls.css`, and scope HPLX
+surfaces with `data-family="hplx"`. Copy font notices with the fonts, and verify the
+hashes you vendor. Ember entry points are historical; new work uses Glimmer.
+
+The terms for this repository's contents are in [LICENSE.md](LICENSE.md); the
+foundation's are in [vendor/brand/LICENSE.md](vendor/brand/LICENSE.md). Release
+history is in [CHANGELOG.md](CHANGELOG.md).

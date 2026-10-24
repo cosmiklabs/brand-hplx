@@ -1,0 +1,34 @@
+name: Check
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: check-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  family:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      # Also rejects staged changes and untracked generated exports.
+      - run: node scripts/build.mjs --check
+      - run: npm run check
+      - name: Read the pinned brand release
+        id: lock
+        run: node -e "const l=require('./vendor/brand/brand.lock.json');console.log('repository='+l.repository);console.log('tag='+l.tag)" >> "$GITHUB_OUTPUT"
+      - uses: actions/checkout@v4
+        with:
+          repository: ${{ steps.lock.outputs.repository }}
+          ref: ${{ steps.lock.outputs.tag }}
+          path: .brand-release
+          fetch-depth: 0
+      # Proves the lock against the tag's own bytes, so an edited lock cannot bless altered files.
+      - run: node vendor/brand/scripts/vendor.mjs verify vendor/brand --release .brand-release
