@@ -1,8 +1,9 @@
 {
-  "lockfileVersion": 1,
+  "lockfileVersion": 2,
+  "package": "@cosmiklabs/brand",
   "repository": "cosmiklabs/brand",
-  "tag": "v0.8.0",
-  "commit": "e416514a291fb71844280f7cf1e2759d195b7a4d",
+  "tag": "v0.9.1",
+  "commit": "48afb82b1edd5f9a7ce01eedbd52b5e3484c3c69",
   "files": {
     "LICENSE.md": "12ec3364762237764fac36cfc13ee736b398e67242ec7cf04ad65a08e09bd47c",
     "fonts/desktop/IBMPlexMono-Regular.ttf": "7c6fbddca4b700be918f5f6183d9bd4464fa427fe435f0b480d77fe2bb8c5a43",
@@ -19,8 +20,8 @@
     "guide/README.md": "d70cfa36b05ef677ad36ea36d7c9a5112995fdecd070697a64c45ba5f0bf014d",
     "guide/colour.md": "5a39725b944e9d878ae34d088766619da943401281d008c41938cc35117d84fd",
     "guide/documents.md": "59dec563aec125801b3671090ef221f7f1a6e62d2686175fddf0c3767bc6da58",
-    "guide/families.md": "e05be80d1ffabcc32cd776c8d5a2b2a228e4d4319448a88b3a233b5e929e0e5a",
-    "guide/governance.md": "068be100cae80a4662fe421cf199a1997cbed88c2801715ce37110d84cee0a4f",
+    "guide/families.md": "08244140b30c44f3c66fbde600f8ebc8cea09c72034d595046e85274ef737ef2",
+    "guide/governance.md": "a8cd23dd692c69b40bab9583481893c8bb90107af4f25b4ea72198d3308e7ee3",
     "guide/identity.md": "7d360224a1bc3e9e76333ec82314065626205d6bb9762f8cc15d9f49ffee78a9",
     "guide/interface.md": "e4a94eff40209f742ef254f27fbd3058859ecd98d98f7a5b5d1da80f241c9ab7",
     "guide/motion.md": "03cd72658c0a19fbe10dbb6160baaab63131d66fa92df6de476ae2390b6a5481",
@@ -33,12 +34,12 @@
     "kits/cosmik/tokens/cosmik.tokens.json": "3ee871f92f024251866e18bebf98ebba4db658b1d82733bd11599672b23dbcff",
     "kits/cosmik/tokens/cosmik_tokens.rs": "01832e0e30194b290220c34c081d0ebc601f0003101eecb5d8a984a09a2f7982",
     "kits/cosmik/tokens/source.json": "d714b23fd14cf179e300392274bf911a69acd1c062a480414bb189b7016a59ce",
-    "package.json": "b658b628572cadf0359ba6da3f76e84d25c92c76b85c11b8e18c41b14be7fee4",
+    "package.json": "9c96b869f437fbf47b09415f0d534c15e44d2c7209938674d0de9ee8073d72cf",
     "scripts/family.mjs": "bb15daf8094e62d915eeb0dfcd27bb7dbf16eb777d58023fddf50f7b499ee705",
     "scripts/font-outlines.mjs": "ffc2040028804ec13cb8d9037886e1495be62a732a2ceaa0d557ff042913ab9f",
     "scripts/generate-tokens.mjs": "8eaf19dc2d4345a8594ca865ec1e0d60e046fa11b307bb4d5f6db8951618c72d",
     "scripts/validate-tokens.mjs": "d5cf6286c6fb2243aaf292bd8aca22dc22193dad3a8badaecf18a517d9b486be",
     "scripts/vector-raster.mjs": "b20fc5fa33f210bb5b10c656b9f9653641c84c569d6ff903f0d983ef2d5a608c",
-    "scripts/vendor.mjs": "e330be66fd39e61357431e05d38738528caf09bca3f7633585ab01c45a199187"
+    "scripts/vendor.mjs": "cade5361fb7636816d3faa460fe9eb7a9e2613bc9087d244be4225f0dd4b01f1"
   }
 }

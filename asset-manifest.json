@@ -12,13 +12,12 @@
   },
   "brand": {
     "repository": "cosmiklabs/brand",
-    "tag": "v0.8.0",
-    "commit": "e416514a291fb71844280f7cf1e2759d195b7a4d",
+    "tag": "v0.9.1",
+    "commit": "48afb82b1edd5f9a7ce01eedbd52b5e3484c3c69",
     "directory": "vendor/brand",
-    "lock_file": "vendor/brand/brand.lock.json",
-    "note": "The Cosmik foundation this family builds on, vendored with vendor/brand/scripts/vendor.mjs sync. Verify with node vendor/brand/scripts/vendor.mjs verify vendor/brand [--release <cosmiklabs/brand checkout>]. Never edit it in place."
+    "lock": "vendor/brand/brand.lock.json"
   },
-  "system_status": "HPLX family approved (owner, 2026-10-15); Glimmer official symbol approved (owner, 2026-10-17). Builds on cosmiklabs/brand v0.8.0 (Cosmik baseline approved, owner, 2026-10-07).",
+  "system_status": "HPLX family approved (owner, 2026-10-15); Glimmer official symbol approved (owner, 2026-10-17). Builds on cosmiklabs/brand v0.9.1 (Cosmik baseline approved, owner, 2026-10-07).",
   "license": "LICENSE.md",
   "known_gaps": [
     {
@@ -134,7 +133,7 @@
         "format": "css"
       },
       "generated_by": "vendor/brand/scripts/family.mjs",
-      "sha256": "57f3146388e9a72512a0f672d6670a0933f46430d6232726ac535e53b07a216d"
+      "sha256": "cb69930754a5ba77e27ffce56e9341db5ab9765d55b47c4b1c41b713d584f156"
     },
     {
       "path": "tokens/hplx.json",
@@ -153,7 +152,7 @@
         "format": "dtcg"
       },
       "generated_by": "vendor/brand/scripts/family.mjs",
-      "sha256": "d50629864934d9f555c37e2c3541f698c3e0e743fffb8dfdaf6330324a4ee93b"
+      "sha256": "2bb0c5272d4cbf1e1d11e9045b47a1ab7708e9e5b6c812c17376e95da89ffda7"
     },
     {
       "path": "tokens/hplx_tokens.rs",
@@ -162,7 +161,7 @@
         "format": "rust"
       },
       "generated_by": "vendor/brand/scripts/family.mjs",
-      "sha256": "d1b9a53fc5e5ce9183952c9e08531fdeaa6049e3840495db646baa98a608544e"
+      "sha256": "e3109d72ee9056d72493721a649097a6287e59b3d5c43bf18ecbaa94644c5e45"
     },
     {
       "path": "tokens/README.md",
@@ -170,7 +169,7 @@
         "kind": "documentation",
         "format": "markdown"
       },
-      "sha256": "00735cbf28541d432045282e79baa62cd9689ee9a5c1c2cc9dbfa8dce253e92a",
+      "sha256": "d5aff7e4cf6d5aadfe3b60a9da4b32caf6ac0e87ae0e5e8b396a939476167672",
       "editable": true
     }
   ],
@@ -366,7 +365,7 @@
         "kind": "documentation"
       },
       "status": "HPLX family guide: Glimmer approved (owner, 2026-10-17); theme approved (owner, 2026-10-15)",
-      "sha256": "6537d38893a9f56d621efd7c423797418d3c66275264dbe3755ea6771f5b0c2c",
+      "sha256": "a0e87ce202c2c90a61a388fb2215bcadfa3686501b7060d5fdfd91874ece534a",
       "editable": true
     },
     {
@@ -1103,18 +1102,272 @@
     "path": "LICENSE.md",
     "sha256": "e9102f55a25795d7deeb451bf2036449d8b9f66771b31a64ac29d4df1b9da74f"
   },
-  "vendor": {
-    "repository": "cosmiklabs/brand",
-    "tag": "v0.8.0",
-    "commit": "e416514a291fb71844280f7cf1e2759d195b7a4d",
-    "lock": {
-      "path": "vendor/brand/brand.lock.json",
-      "sha256": "491d225e4be90431e7e6d829005b87a894b14ec546429b4ff40799cc8944cb19"
-    },
+  "distribution": {
+    "description": "Every file a consumer syncs from a release of this repository with vendor/brand/scripts/vendor.mjs sync, with its SHA-256: the HPLX tokens, Glimmer and historical Ember marks, icons, Spectral with its notice, guides and licence, and the Cosmik foundation under vendor/brand/ unchanged with its lock. `vendor.mjs verify` checks both layers.",
     "files": [
+      {
+        "path": "EMBER-HISTORICAL.md",
+        "sha256": "d3f8b20d4b485ac2d60b0a8930fe18d24f0517d2279204ed9e0e54d8eb3d3c1a"
+      },
+      {
+        "path": "LICENSE.md",
+        "sha256": "e9102f55a25795d7deeb451bf2036449d8b9f66771b31a64ac29d4df1b9da74f"
+      },
+      {
+        "path": "README.md",
+        "sha256": "a0e87ce202c2c90a61a388fb2215bcadfa3686501b7060d5fdfd91874ece534a"
+      },
+      {
+        "path": "assets/ember-small.source.json",
+        "sha256": "e3739cc6d9a4fbf636329b5af9d5e99e684926af8460e6549dd67935e430dbc5"
+      },
+      {
+        "path": "assets/ember.source.json",
+        "sha256": "a3f037c74454b63f242cc27ed1c8af78d668bf1e1fb0e226eae46fd3cc5cb355"
+      },
+      {
+        "path": "assets/glimmer.source.json",
+        "sha256": "1857e5d361852d8386aeaf75c457ae58c3ce09f6b3db5de3c406e917612372d8"
+      },
+      {
+        "path": "assets/hplx-ember-amber.svg",
+        "sha256": "887fbc9a070ea50a8323cb464219f27f279cd82293eb88e7168106acc8ab306d"
+      },
+      {
+        "path": "assets/hplx-ember-bone.svg",
+        "sha256": "16b130f69215052188e6eef31f3ef8b6dee1aa0891a4bb5005a54cc2e6ec9601"
+      },
+      {
+        "path": "assets/hplx-ember-ink.svg",
+        "sha256": "e167df5e68985454fea41963bea5356ba36685d67f18e0c6971137556d3c9557"
+      },
+      {
+        "path": "assets/hplx-ember-primary.svg",
+        "sha256": "da6f6c37a7e7e83bb409510c2d47beaf57b86f80f467b8fbec93c3ede8806426"
+      },
+      {
+        "path": "assets/hplx-ember-small.svg",
+        "sha256": "1bd01c6ee7123a09a78ed6a5cce97892ece5d11c36189819040ae9a18948cbb0"
+      },
+      {
+        "path": "assets/hplx-glimmer-black.svg",
+        "sha256": "512289d25e9ce2512f4ed44bd4ee14b328d0adc75aaf0af52fd028243503ede3"
+      },
+      {
+        "path": "assets/hplx-glimmer-currentColor.svg",
+        "sha256": "87bf9db1ea1300f7e4c0a9bf8cbd624bd945c2d8b205dbaafbe993a98cb7e3b3"
+      },
+      {
+        "path": "assets/hplx-glimmer-dark.svg",
+        "sha256": "4e62f4c11e5e84ec17d7d0705aba472767596aede653f4211a4dfeca26b680d7"
+      },
+      {
+        "path": "assets/hplx-glimmer-light.svg",
+        "sha256": "7e19dd4f686c248b174831f569b94b71247e673ff5db1dbea7a767b2c6ef45e0"
+      },
+      {
+        "path": "assets/hplx-glimmer-lockup-black.svg",
+        "sha256": "e9d1a2cfbbfbfd26e6257330eae5638da118231db15da25b6ce89f90a569833f"
+      },
+      {
+        "path": "assets/hplx-glimmer-lockup-currentColor.svg",
+        "sha256": "447070d695965df9ef4216e5c395c42dbc0a64ea0d844127fd4be1028d72ca9a"
+      },
+      {
+        "path": "assets/hplx-glimmer-lockup-dark.svg",
+        "sha256": "0c96db08d97f510e519ab24356b92f0fe9b56ba4a1f9cb7d2704ece34121ef3d"
+      },
+      {
+        "path": "assets/hplx-glimmer-lockup-light.svg",
+        "sha256": "a333d34d5a8a8c12369ece1646b9c5f7e1b06f9a0dd18d46c69855fa75fd94e7"
+      },
+      {
+        "path": "assets/hplx-glimmer-lockup-white.svg",
+        "sha256": "80cbad23c6ef6af3d41454a4e420b14d17687ac06619ac1363981e97f08eba52"
+      },
+      {
+        "path": "assets/hplx-glimmer-white.svg",
+        "sha256": "fd20079b4f735a8242438e095da14f4c981f25397c80343c776f9424606473b5"
+      },
+      {
+        "path": "assets/hplx-lockup-amber.svg",
+        "sha256": "4f391fb5abe37c4376d96e37b5700b206989093f82cc14432be54644fa26a094"
+      },
+      {
+        "path": "assets/hplx-lockup-bone.svg",
+        "sha256": "acf1d2c88d6f09ff2572af7ea6e4bbc9a6b8fd39a28850050ddee7c361f4ba1f"
+      },
+      {
+        "path": "assets/hplx-lockup-ink.svg",
+        "sha256": "f8d01240c710b17c9e43abf8df8a74ee4835c19f54e2127496056861ca7cb326"
+      },
+      {
+        "path": "assets/hplx-lockup-primary.svg",
+        "sha256": "85593e9286465d522f3982595f799c957cac0beba6ac2130a034457ff6a21438"
+      },
+      {
+        "path": "assets/hplx-lockup.source.json",
+        "sha256": "58cf7f6abb7fa93d48177d57f50cf11a82c02bbd644264fda031ac47aed43648"
+      },
+      {
+        "path": "assets/png/hplx-ember-amber-1024x384.png",
+        "sha256": "5bee9e0d78132b81b3d560144036e8af213a98eee2ee677a509710a4ab0a5153"
+      },
+      {
+        "path": "assets/png/hplx-ember-bone-1024x384.png",
+        "sha256": "85bd572a6f4ccbb3efe22a175a43f60ff5530b12c0c354e43069968798c4e611"
+      },
+      {
+        "path": "assets/png/hplx-ember-ink-1024x384.png",
+        "sha256": "9e138527515503118d8dbf8e0a104577b874b8a30b2538c0a2cb0648d0b15b1a"
+      },
+      {
+        "path": "assets/png/hplx-ember-primary-1024.png",
+        "sha256": "96ae21959141269380c1b062dbf3958c39cdbb4ad17f1235f9e367bcccf8561f"
+      },
+      {
+        "path": "assets/png/hplx-ember-primary-128.png",
+        "sha256": "32ee12b721407d11ea87b8166e5ce07103aa25606b5807e193f6fda6c6d28570"
+      },
+      {
+        "path": "assets/png/hplx-ember-primary-16.png",
+        "sha256": "b4b4c3efafd481b1cd6b4507959b88622eb01aa9124fa927655736ae39570ecd"
+      },
+      {
+        "path": "assets/png/hplx-ember-primary-24.png",
+        "sha256": "55bea93070b8324b3042308e1b19d8357520cf80566415cc421b8bff53dca7c1"
+      },
+      {
+        "path": "assets/png/hplx-ember-primary-256.png",
+        "sha256": "8cea979606c1b87c9e2e7ae841463a9c89509912d56841c2a8348506633766c7"
+      },
+      {
+        "path": "assets/png/hplx-ember-primary-32.png",
+        "sha256": "aed3ed4fdbce5aa8351e0e1650dba6aeb271eebf7d1401f7e930980e5ee233f0"
+      },
+      {
+        "path": "assets/png/hplx-ember-primary-48.png",
+        "sha256": "29e1251503d3570943564654a4f20a7546629c5444dc0c64e233b4dcad8b5016"
+      },
+      {
+        "path": "assets/png/hplx-ember-primary-512.png",
+        "sha256": "d7b12f387ac4968894e9cb1011ca94b8aa6721fe87b302e0bb626ffa05f10e36"
+      },
+      {
+        "path": "assets/png/hplx-ember-primary-64.png",
+        "sha256": "39f731abf4eaaf5da04643b12898950503a20b58318553e032a36928c5fce90a"
+      },
+      {
+        "path": "assets/png/hplx-ember-primary-96.png",
+        "sha256": "597e2751791e970dcc6d6aa86470e63292a720642d940577158b8c95aae440fe"
+      },
+      {
+        "path": "assets/png/hplx-ember-small-16.png",
+        "sha256": "242c3999cfc7e0c1505c7057d2e2820c8ef996838dbd92f01cbe58b6999ea111"
+      },
+      {
+        "path": "assets/png/hplx-ember-small-24.png",
+        "sha256": "7a43ef95e571ae6506fadfb9570f5dfa9aae378bcc3de35f1e17d97be0e55311"
+      },
+      {
+        "path": "assets/png/hplx-ember-small-32.png",
+        "sha256": "cb620755ae62f47681f50feaea53cefe44f7f1a38b2f9e0b33ecc4b24f550066"
+      },
+      {
+        "path": "assets/png/hplx-ember-small-48.png",
+        "sha256": "bf333e8817650f9fdd55e90c63e80eb14f039d9fb56d9cbd8bb30cefe2f14cae"
+      },
+      {
+        "path": "assets/png/hplx-lockup-amber-1024x341.png",
+        "sha256": "486eb0179d43bd2a17dc03bad24f7e14503c88642162091e3d20b9679e533e88"
+      },
+      {
+        "path": "assets/png/hplx-lockup-amber-2172x724.png",
+        "sha256": "d59d5c0f94166103a7a8a5a16ce65418dac095a1dd17e5ae716673ae2062cf67"
+      },
+      {
+        "path": "assets/png/hplx-lockup-bone-1024x341.png",
+        "sha256": "fade604331c9612fb82ac9cfbeb109b11adb5adbc11aab01e2c3536d8b13182b"
+      },
+      {
+        "path": "assets/png/hplx-lockup-bone-2172x724.png",
+        "sha256": "113e7684b281a09ab036329df7dec26f99576c0e9ea6707675f9c100a7fc1ff2"
+      },
+      {
+        "path": "assets/png/hplx-lockup-ink-1024x341.png",
+        "sha256": "de937cd93abd7809ea30a32b8a93c4bf734f63659c49f72369eeb995d0de2863"
+      },
+      {
+        "path": "assets/png/hplx-lockup-ink-2172x724.png",
+        "sha256": "7aa156cb1a566af840f86e875f8aba564fa30e21c76d03453565173b6324615b"
+      },
+      {
+        "path": "assets/png/hplx-lockup-primary-1024x341.png",
+        "sha256": "02ee3d712bac629952b400a8810f245cfa9fe61e9ca5122c383c257b39811328"
+      },
+      {
+        "path": "assets/png/hplx-lockup-primary-2172x724.png",
+        "sha256": "4beb0fbd0faecd910a6fdea59c4c89667c99c27fa2271cac1bf028122aa6adb5"
+      },
+      {
+        "path": "fonts/desktop/Spectral-SemiBold.ttf",
+        "sha256": "5f86915a744832ecf6e4a17ab04bea091b9fa992ef5164ff65ae34c1da2fe94b"
+      },
+      {
+        "path": "fonts/licenses/Spectral-OFL.txt",
+        "sha256": "501d6ceca8e552630fe3aa9442b9a818565680a1a2f79f3fb8c13d6f309a9e98"
+      },
+      {
+        "path": "fonts/web/Spectral-SemiBold.woff2",
+        "sha256": "6cd6a939159630d0ac1a532f6091df645dcd2025cfe94a1374c529b894a8b058"
+      },
+      {
+        "path": "icons/hplx-ember-512.png",
+        "sha256": "843f03e1d258b858eb9d76c5b6af147a1b7be067d18c93c0caf6521300dc9b9d"
+      },
+      {
+        "path": "icons/hplx-ember-apple-touch-180.png",
+        "sha256": "13099929572583b5ecd2cc910651f1cf94d9d3ecbd9cf63b7aa34d71ebaaf890"
+      },
+      {
+        "path": "icons/hplx-ember.icns",
+        "sha256": "567b1f1f3a8af8e178c61b7f0a444d6efc120e9433ad7b3b47141575ea525bdf"
+      },
+      {
+        "path": "icons/hplx-ember.ico",
+        "sha256": "5760eda78675731ef54db987b35b8e65acaffe09f6ddfb2aa03549e4fe12d76a"
+      },
+      {
+        "path": "tokens/README.md",
+        "sha256": "d5aff7e4cf6d5aadfe3b60a9da4b32caf6ac0e87ae0e5e8b396a939476167672"
+      },
+      {
+        "path": "tokens/family.json",
+        "sha256": "708e9340079093a600786776174b94c0100d4e023e735d77fa880658b92c88db"
+      },
+      {
+        "path": "tokens/hplx.css",
+        "sha256": "cb69930754a5ba77e27ffce56e9341db5ab9765d55b47c4b1c41b713d584f156"
+      },
+      {
+        "path": "tokens/hplx.json",
+        "sha256": "920f76c7c85e70cab3f5b7c1bc54532bbed3be004faef857e5e9756ffe0be80e"
+      },
+      {
+        "path": "tokens/hplx.tokens.json",
+        "sha256": "2bb0c5272d4cbf1e1d11e9045b47a1ab7708e9e5b6c812c17376e95da89ffda7"
+      },
+      {
+        "path": "tokens/hplx_tokens.rs",
+        "sha256": "e3109d72ee9056d72493721a649097a6287e59b3d5c43bf18ecbaa94644c5e45"
+      },
       {
         "path": "vendor/brand/LICENSE.md",
         "sha256": "12ec3364762237764fac36cfc13ee736b398e67242ec7cf04ad65a08e09bd47c"
+      },
+      {
+        "path": "vendor/brand/brand.lock.json",
+        "sha256": "f362ccad026f42ae8d776fccbe5177909837cfacd1c8ebd1d4d654a0f04b33d0"
       },
       {
         "path": "vendor/brand/fonts/desktop/IBMPlexMono-Regular.ttf",
@@ -1174,11 +1427,11 @@
       },
       {
         "path": "vendor/brand/guide/families.md",
-        "sha256": "e05be80d1ffabcc32cd776c8d5a2b2a228e4d4319448a88b3a233b5e929e0e5a"
+        "sha256": "08244140b30c44f3c66fbde600f8ebc8cea09c72034d595046e85274ef737ef2"
       },
       {
         "path": "vendor/brand/guide/governance.md",
-        "sha256": "068be100cae80a4662fe421cf199a1997cbed88c2801715ce37110d84cee0a4f"
+        "sha256": "a8cd23dd692c69b40bab9583481893c8bb90107af4f25b4ea72198d3308e7ee3"
       },
       {
         "path": "vendor/brand/guide/identity.md",
@@ -1230,7 +1483,7 @@
       },
       {
         "path": "vendor/brand/package.json",
-        "sha256": "b658b628572cadf0359ba6da3f76e84d25c92c76b85c11b8e18c41b14be7fee4"
+        "sha256": "9c96b869f437fbf47b09415f0d534c15e44d2c7209938674d0de9ee8073d72cf"
       },
       {
         "path": "vendor/brand/scripts/family.mjs",
@@ -1254,7 +1507,7 @@
       },
       {
         "path": "vendor/brand/scripts/vendor.mjs",
-        "sha256": "e330be66fd39e61357431e05d38738528caf09bca3f7633585ab01c45a199187"
+        "sha256": "cade5361fb7636816d3faa460fe9eb7a9e2613bc9087d244be4225f0dd4b01f1"
       }
     ]
   }

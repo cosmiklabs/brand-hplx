@@ -2,7 +2,7 @@
 
 This repository is the HPLX family of the Cosmik brand: the HPLX tokens, the Glimmer
 symbol and lockups, the historical Ember artwork and icons, and Spectral for HPLX
-headings. It builds on [`cosmiklabs/brand`](https://github.com/cosmiklabs/brand) v0.8.0,
+headings. It builds on [`cosmiklabs/brand`](https://github.com/cosmiklabs/brand) v0.9.1,
 vendored at `vendor/brand/` and pinned by `vendor/brand/brand.lock.json`. See
 [Building on the Cosmik foundation](#building-on-the-cosmik-foundation).
 
@@ -34,7 +34,7 @@ HPLX does not imply official affiliation with a game's original owner or one lic
 
 ## Interface use
 
-Use the [consumer guide](https://github.com/cosmiklabs/brand/blob/v0.8.0/kits/README.md) for theme, font and scope integration.
+Use the [consumer guide](https://github.com/cosmiklabs/brand/blob/v0.9.1/kits/README.md) for theme, font and scope integration.
 HPLX heading roles may use Spectral; navigation, forms and utility text stay Inter.
 Status tones supplement explicit words. Follow shared [interface](vendor/brand/guide/interface.md),
 [motion](vendor/brand/guide/motion.md) and [quality review](vendor/brand/guide/quality.md) guidance
@@ -64,7 +64,7 @@ vendored scripts.
 | `fonts/` | Spectral SemiBold (desktop TTF, web WOFF2) and its OFL notice |
 | `vendor/brand/` | The Cosmik foundation: baseline tokens, controls, Inter and IBM Plex Mono, the guide and the family tools; never edit |
 | `scripts/`, `tests/` | The HPLX builders, `build.mjs`, `check.mjs`, the manifest verifier and tests |
-| `asset-manifest.json` | Every deliverable here and in `vendor/brand/`, with roles, status and SHA-256 |
+| `asset-manifest.json` | Every deliverable here with roles, status and SHA-256; `brand` names the foundation and `distribution` lists everything consumers sync, including `vendor/brand/` |
 
 Requires Node.js 22 or later; there is nothing to install.
 
@@ -77,7 +77,7 @@ node scripts/build.mjs --check   # rebuild from a clean commit; fail on any drif
 ### Updating the foundation
 
 1. Check out `cosmiklabs/brand` at the new release tag, with a clean tree, and read
-   its [changelog](https://github.com/cosmiklabs/brand/blob/v0.8.0/CHANGELOG.md).
+   its [changelog](https://github.com/cosmiklabs/brand/blob/v0.9.1/CHANGELOG.md).
 2. `node <brand>/scripts/vendor.mjs sync --from <brand> --into vendor/brand`
    replaces `vendor/brand/` and its lock.
 3. If the baseline token version changed, update `extends` in `tokens/family.json`.
@@ -91,16 +91,38 @@ checkout of the tag it records.
 
 ### Consuming this repository
 
-Pin a commit or release of this repository, never a moving branch, and take files
-through `asset-manifest.json` from that same revision: `entry_points` names the
-canonical files, and every listed file carries its SHA-256. The manifest also lists
-every file of `vendor/brand/`, so a consumer such as the Cosmik website or the HPLX
-product gets the foundation layer (baseline CSS, controls, Inter and IBM Plex Mono
-with their notices) through this repository at the release `brand` names. Load
-`vendor/brand/kits/cosmik/tokens/cosmik.css`, then `tokens/hplx.css`, then
-optionally `vendor/brand/kits/cosmik/components/controls.css`, and scope HPLX
-surfaces with `data-family="hplx"`. Copy font notices with the fonts, and verify the
-hashes you vendor. Ember entry points are historical; new work uses Glimmer.
+Products (an HPLX application, or a Cosmik surface showing HPLX) sync a release of
+this repository with the brand vendor tool it carries. Check out a `vX.Y.Z` tag of
+this repository, clean and exactly at the tag, then, in the consumer:
+
+```sh
+node <brand-hplx checkout>/vendor/brand/scripts/vendor.mjs sync --from <brand-hplx checkout> --into vendor/brand-hplx
+node vendor/brand-hplx/vendor/brand/scripts/vendor.mjs verify vendor/brand-hplx
+node vendor/brand-hplx/vendor/brand/scripts/vendor.mjs verify vendor/brand-hplx --release <brand-hplx checkout>
+```
+
+`sync` copies every file under `distribution` in `asset-manifest.json` after
+checking its SHA-256 and writes `vendor/brand-hplx/brand-hplx.lock.json` (package,
+repository, tag, commit and every file's hash). The set includes the Cosmik
+foundation this family was built and checked against, unchanged under
+`vendor/brand-hplx/vendor/brand/` with its own `brand.lock.json`, so one `verify`
+checks both layers and names any changed, missing or extra file in either. Run it
+in CI; `--release` also proves the lock against the tag. Do not sync
+`cosmiklabs/brand` separately beside it.
+
+Load the stylesheets in this order and scope HPLX surfaces with `data-family="hplx"`:
+
+```html
+<link rel="stylesheet" href="vendor/brand-hplx/vendor/brand/kits/cosmik/tokens/cosmik.css">
+<link rel="stylesheet" href="vendor/brand-hplx/tokens/hplx.css">
+<link rel="stylesheet" href="vendor/brand-hplx/vendor/brand/kits/cosmik/components/controls.css">
+```
+
+`controls.css` is optional. Spectral is under `vendor/brand-hplx/fonts/`, Inter and
+IBM Plex Mono under `vendor/brand-hplx/vendor/brand/fonts/`, each with its notice.
+`entry_points` in the manifest names each canonical file, and the identity sections
+give each deliverable's role and status. Ember entry points are historical; new
+work uses Glimmer. Never edit the synced copies; take changes from a new release.
 
 The terms for this repository's contents are in [LICENSE.md](LICENSE.md); the
 foundation's are in [vendor/brand/LICENSE.md](vendor/brand/LICENSE.md). Release
