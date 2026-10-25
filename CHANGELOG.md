@@ -4,6 +4,17 @@ The family version (`version` in `tokens/family.json`, also the manifest and
 package version) follows semver. The Cosmik foundation this family builds on is
 pinned separately in `vendor/brand/brand.lock.json`. Newest first.
 
+## 0.1.2 · 24 October 2026
+
+- **Foundation `cosmiklabs/brand` v0.11.0** (commit
+  `1a7d5c392dd6926eaa8625c496a707de1a4b4d1b`), synced with its `vendor.mjs`. Its
+  shared controls add `c-status--dense`: the status pill, roles and `label` family,
+  tracking and case at the `ui-small` size with tighter padding, for dense rows,
+  headers and cards. `c-status` is unchanged. See the foundation's
+  [changelog](https://github.com/cosmiklabs/brand/blob/v0.11.0/CHANGELOG.md).
+- No HPLX token value, mark, palette or font changes. Generated tokens differ only
+  in the version and the provenance header; `extends` stays `Cosmik baseline 0.7.0`.
+
 ## 0.1.1 · 24 October 2026
 
 - **Foundation `cosmiklabs/brand` v0.10.0** (commit

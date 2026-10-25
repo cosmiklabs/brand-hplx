@@ -1,7 +1,7 @@
 {
   "name": "Cosmik HPLX family",
   "package": "@cosmiklabs/brand-hplx",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "date": "2026-10-24",
   "family": {
     "id": "hplx",
@@ -12,12 +12,12 @@
   },
   "brand": {
     "repository": "cosmiklabs/brand",
-    "tag": "v0.10.0",
-    "commit": "c3bf1a7b2e34ff764a069e96c5c86ff29316f7b4",
+    "tag": "v0.11.0",
+    "commit": "1a7d5c392dd6926eaa8625c496a707de1a4b4d1b",
     "directory": "vendor/brand",
     "lock": "vendor/brand/brand.lock.json"
   },
-  "system_status": "HPLX family approved (owner, 2026-10-15); Glimmer official symbol approved (owner, 2026-10-17). Builds on cosmiklabs/brand v0.10.0 (Cosmik baseline approved, owner, 2026-10-07).",
+  "system_status": "HPLX family approved (owner, 2026-10-15); Glimmer official symbol approved (owner, 2026-10-17). Builds on cosmiklabs/brand v0.11.0 (Cosmik baseline approved, owner, 2026-10-07).",
   "license": "LICENSE.md",
   "known_gaps": [
     {
@@ -123,7 +123,7 @@
         "format": "source"
       },
       "status": "HPLX family source, approved (owner, 2026-10-15)",
-      "sha256": "da8f5225954e00ab3be02a5855a4005d4a3869cdc32b98a91954deeae4c05484",
+      "sha256": "022c99b5a3af2bd9241d4551f47b61b2031eca95310839f9e98bb7757ee927d3",
       "editable": true
     },
     {
@@ -133,7 +133,7 @@
         "format": "css"
       },
       "generated_by": "vendor/brand/scripts/family.mjs",
-      "sha256": "cdcd271727b1bcd583a16241ed99a5e565420d5b93839c8545a72303e9f88b75"
+      "sha256": "f835173439c4095aaa1337bb37051a9b6540dc23d8d46b1447dfac4da56f18f6"
     },
     {
       "path": "tokens/hplx.json",
@@ -143,7 +143,7 @@
         "note": "kit-specific JSON; includes a native section in px, fractions, characters, bezier points and colour floats"
       },
       "generated_by": "vendor/brand/scripts/family.mjs",
-      "sha256": "30784346e1321612ae06c4e49220ad72effe97e2f462b44abc5aeb418ea94c9f"
+      "sha256": "4169e87416fff1b44e8c4f45b8c6a87de90736d8cce69702eee1111e7d249c7f"
     },
     {
       "path": "tokens/hplx.tokens.json",
@@ -152,7 +152,7 @@
         "format": "dtcg"
       },
       "generated_by": "vendor/brand/scripts/family.mjs",
-      "sha256": "44135848d92117fb0ea3de1725f1bd41f531069eef73198461ed2c09419f13b8"
+      "sha256": "cb53516be2d83f6d8f2a14413f0880b8cac91d5b3133e5c323c2c56571a9db2a"
     },
     {
       "path": "tokens/hplx_tokens.rs",
@@ -161,7 +161,7 @@
         "format": "rust"
       },
       "generated_by": "vendor/brand/scripts/family.mjs",
-      "sha256": "75c06ac8e226c60f7ff53c11103cc127fe923e7c03f0d22e1055fca084754d80"
+      "sha256": "b5c351af1833c5a17dc44254f6c62eecb086efcc99ad8a111b48ad5f6cf88910"
     },
     {
       "path": "tokens/README.md",
@@ -169,7 +169,7 @@
         "kind": "documentation",
         "format": "markdown"
       },
-      "sha256": "7b54f361ec112668180706d516fdd870429b636fa51c073d9f673b05edb70c42",
+      "sha256": "08bec02412adf5a38261096d1a351f157e82de64064fdeab915cd6ba88da3aa1",
       "editable": true
     }
   ],
@@ -365,7 +365,7 @@
         "kind": "documentation"
       },
       "status": "HPLX family guide: Glimmer approved (owner, 2026-10-17); theme approved (owner, 2026-10-15)",
-      "sha256": "aa4fcff4c72e8d9c0fc4c330ad5b02497fe8ee7320d2193f59b0b0916423d107",
+      "sha256": "6e06504745f95de783b49843b7f3a531ce9901668b044483d5d418dc2a261986",
       "editable": true
     },
     {
@@ -1115,7 +1115,7 @@
       },
       {
         "path": "README.md",
-        "sha256": "aa4fcff4c72e8d9c0fc4c330ad5b02497fe8ee7320d2193f59b0b0916423d107"
+        "sha256": "6e06504745f95de783b49843b7f3a531ce9901668b044483d5d418dc2a261986"
       },
       {
         "path": "assets/ember-small.source.json",
@@ -1339,27 +1339,27 @@
       },
       {
         "path": "tokens/README.md",
-        "sha256": "7b54f361ec112668180706d516fdd870429b636fa51c073d9f673b05edb70c42"
+        "sha256": "08bec02412adf5a38261096d1a351f157e82de64064fdeab915cd6ba88da3aa1"
       },
       {
         "path": "tokens/family.json",
-        "sha256": "da8f5225954e00ab3be02a5855a4005d4a3869cdc32b98a91954deeae4c05484"
+        "sha256": "022c99b5a3af2bd9241d4551f47b61b2031eca95310839f9e98bb7757ee927d3"
       },
       {
         "path": "tokens/hplx.css",
-        "sha256": "cdcd271727b1bcd583a16241ed99a5e565420d5b93839c8545a72303e9f88b75"
+        "sha256": "f835173439c4095aaa1337bb37051a9b6540dc23d8d46b1447dfac4da56f18f6"
       },
       {
         "path": "tokens/hplx.json",
-        "sha256": "30784346e1321612ae06c4e49220ad72effe97e2f462b44abc5aeb418ea94c9f"
+        "sha256": "4169e87416fff1b44e8c4f45b8c6a87de90736d8cce69702eee1111e7d249c7f"
       },
       {
         "path": "tokens/hplx.tokens.json",
-        "sha256": "44135848d92117fb0ea3de1725f1bd41f531069eef73198461ed2c09419f13b8"
+        "sha256": "cb53516be2d83f6d8f2a14413f0880b8cac91d5b3133e5c323c2c56571a9db2a"
       },
       {
         "path": "tokens/hplx_tokens.rs",
-        "sha256": "75c06ac8e226c60f7ff53c11103cc127fe923e7c03f0d22e1055fca084754d80"
+        "sha256": "b5c351af1833c5a17dc44254f6c62eecb086efcc99ad8a111b48ad5f6cf88910"
       },
       {
         "path": "vendor/brand/LICENSE.md",
@@ -1367,7 +1367,7 @@
       },
       {
         "path": "vendor/brand/brand.lock.json",
-        "sha256": "882708fc9353b8bcd2ca4526610a05c60d9fea6266ab95c7b8cb06b312a94d50"
+        "sha256": "d4277fac9d7d1a0efa07baa086e37047a9fd79b9c68adf44b71b7bb2979265f4"
       },
       {
         "path": "vendor/brand/fonts/desktop/IBMPlexMono-Regular.ttf",
@@ -1439,7 +1439,7 @@
       },
       {
         "path": "vendor/brand/guide/interface.md",
-        "sha256": "4f5dfc6cca3bb7e3892d967c89f0a09d705d183c8a082b7fd2d87af489109aeb"
+        "sha256": "d96e278550df71ce32b631a7cf07cb1272988991058d508a21716e52f2a18b23"
       },
       {
         "path": "vendor/brand/guide/motion.md",
@@ -1459,7 +1459,7 @@
       },
       {
         "path": "vendor/brand/kits/cosmik/components/controls.css",
-        "sha256": "a89832f14b08a38cac7693fcdb8ecf6a5212fa7b667532cc0e11e157ccc89c13"
+        "sha256": "84faa7fa5db11986365933af16ddf2bfb02069250cd055aee35de0df315c2fa8"
       },
       {
         "path": "vendor/brand/kits/cosmik/tokens/cosmik.css",
@@ -1483,7 +1483,7 @@
       },
       {
         "path": "vendor/brand/package.json",
-        "sha256": "b64855bf68d852e10865181e571f3cee7f68aad43fb059074a8d1dcf75d133ef"
+        "sha256": "fbddd4dce949b43495b1d2719c14f3a732535ef30ed90ff80302ec2c06b5041c"
       },
       {
         "path": "vendor/brand/scripts/family.mjs",
