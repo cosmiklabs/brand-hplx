@@ -365,7 +365,7 @@
         "kind": "documentation"
       },
       "status": "HPLX family guide: Glimmer approved (owner, 2026-10-17); theme approved (owner, 2026-10-15)",
-      "sha256": "6e06504745f95de783b49843b7f3a531ce9901668b044483d5d418dc2a261986",
+      "sha256": "6f414185927b50e629bc18ca7416f5eda47cc8a4677db3020c86834843dfd154",
       "editable": true
     },
     {
@@ -1115,7 +1115,7 @@
       },
       {
         "path": "README.md",
-        "sha256": "6e06504745f95de783b49843b7f3a531ce9901668b044483d5d418dc2a261986"
+        "sha256": "6f414185927b50e629bc18ca7416f5eda47cc8a4677db3020c86834843dfd154"
       },
       {
         "path": "assets/ember-small.source.json",

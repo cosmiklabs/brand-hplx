@@ -29,5 +29,6 @@ if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.me
   // The icon pack reads the Ember renders, so it runs after build-hplx-assets.
   for (const script of BUILDERS) node(path.join(here, script));
   node(path.join(here, 'verify-manifest.mjs'), '--update-generated');
+  node(path.join(here, 'build-reference.mjs'));
   if (args.includes('--check')) assertCleanTree(root);
 }

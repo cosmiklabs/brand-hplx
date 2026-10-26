@@ -1,0 +1,14 @@
+{
+  "id": "hplx",
+  "name": "HPLX",
+  "mark": "Glimmer",
+  "description": "Glimmer, Spectral headings, and the warm light-and-shadow palette of the HPLX family.",
+  "identityNote": "The approved Glimmer pairs a compact light above an enclosing shadow. Its geometry, Spectral lockups and complete family palette are the reference for HPLX interfaces and documents.",
+  "assetNote": "Glimmer is the current identity. Ember and its platform icons are deprecated history; no current Glimmer platform icon pack is approved.",
+  "identity": {
+    "symbolDark": "assets/hplx-glimmer-dark.svg",
+    "symbolLight": "assets/hplx-glimmer-light.svg",
+    "lockupDark": "assets/hplx-glimmer-lockup-dark.svg",
+    "lockupLight": "assets/hplx-glimmer-lockup-light.svg"
+  }
+}

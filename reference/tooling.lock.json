@@ -1,0 +1,10 @@
+{
+  "repository": "cosmiklabs/brand",
+  "files": {
+    "scripts/build-family-reference.mjs": "1813b3f32ecd3cab92daef82432ee7ecf3eec04c165ddc4c6f8925f2e2f8c4b5",
+    "scripts/reference-markdown.mjs": "0c7c61fb4da0d4fbc368865ece3c9a11dc04206943fdeb2e72af58dcd7e0c2b9",
+    "scripts/reference-sites.mjs": "e9e2f97f2b5607887abdc21db54723b6bc5a2ec8c8a23b7eaa7bc268fbe1bec3",
+    "reference/reference.css": "d4d52fcbb231426969fa03a61bb4b5e34eee0ae3927e160dd3f3a28ca1d789a9",
+    "reference/reference.js": "f2f9f7c259624c9a87e42e4ec832f74957f15463558cd46bce61d4793bc392ea"
+  }
+}

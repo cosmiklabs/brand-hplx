@@ -127,3 +127,11 @@ work uses Glimmer. Never edit the synced copies; take changes from a new release
 The terms for this repository's contents are in [LICENSE.md](LICENSE.md); the
 foundation's are in [vendor/brand/LICENSE.md](vendor/brand/LICENSE.md). Release
 history is in [CHANGELOG.md](CHANGELOG.md).
+
+## HTML reference
+
+The complete HTML reference includes this guide, live family typography and color,
+approved downloads, a token browser and pinned shared rules. Run
+`npm run dev:reference` for local preview. See
+[reference setup and Pages publishing](reference/README.md); the presentation
+tooling is shared with Cosmik while this family’s vendored foundation stays unchanged.
