@@ -25,3 +25,12 @@ The shared reference header now has an 88 px minimum desktop height and a 72 px 
 Shared presentation now defines sidebar labels and section ordering, search prompts, homepage actions and component examples. Brand-specific chapters and assets remain separate. Cosmik’s component page retains the guide navigation and links to its full interactive specimen with a return link. A selected theme is stored locally and reused across guide pages on the same host. Storage failures fall back to page-local selection.
 
 Local review covered 54 page/theme/viewport combinations across the three guides at 1280, 390 and 320 px, with no overflow, broken images or missing active navigation. Form reset, search, mobile navigation and the interactive-specimen return path were exercised. Theme selection persisted between sites. Local repository checks passed 100 Cosmik, 31 HPLX and 36 Tectra tests. CI runs the full browser suite, including 64 reference layout cases and theme retention.
+
+## 2026-10-26 — Reference-site consistency review
+
+- Added searchable product Guide indexes, using the same Start here navigation position and chapter labels as Cosmik.
+- Aligned the shared header identity slot and divider, and scaled product lockups proportionally to match the apparent size of the Cosmik header identity.
+- Added original off-white and ink artwork previews to the Cosmik Overview, in paired dark/light surface cards.
+- Built and checked all three repositories: 104 Cosmik, 31 HPLX and 36 Tectra tests passed.
+- Inspected local desktop renders of all three overviews and the product index; checked all overviews at 1280, 390 and 320 px in light/dark themes: no horizontal overflow or broken images, 88 px desktop and 72 px mobile headers, matching desktop divider position. Product indexes also passed the same width/theme checks. Exercised HPLX index search and identity/index navigation.
+- Approved identity sources, family tokens and vendored foundations were not changed. This is reference-site review evidence, not accessibility certification.

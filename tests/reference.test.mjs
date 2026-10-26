@@ -47,6 +47,8 @@ test('tooling refuses unreviewed sources',()=>{
 test('shared navigation labels, order and overview actions stay consistent',()=>{
  const home=read('index.html');
  const nav=home.match(/<nav aria-label="Reference">([\s\S]*?)<\/nav>/)[1];
+ assert.match(nav, /href="index.html"[^>]*>Overview<\/a>[\s\S]*?href="guide.html"[^>]*>Guide index<\/a>/);
+ assert.ok(read('guide.html').includes('aria-current="page">Guide index'));
  const groups=[...nav.matchAll(/class="eyebrow">([^<]+)/g)].map(m=>m[1]);
  assert.deepEqual(groups.filter(g=>g!=='Archive'),['Start here','Foundations','Experience','Implementation','Tools','Resources']);
  for(const label of ['Identity &amp; usage','Family contract','Quality review','Governance','Asset library','Design tokens','Component examples','Validation record'])assert.ok(nav.includes('>'+label+'</a>'),label);
