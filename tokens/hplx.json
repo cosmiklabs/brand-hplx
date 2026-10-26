@@ -1,9 +1,9 @@
 {
   "name": "Cosmik · HPLX",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "status": "Approved (owner, 2026-10-15)",
   "family": "hplx",
-  "extends": "Cosmik baseline 0.7.0",
+  "extends": "Cosmik baseline 0.11.0",
   "extensionRoles": [
     "accent",
     "shadow",
@@ -53,19 +53,35 @@
     "paper-shade": "#EFEEE9",
     "scrim-dark": "#000000B8",
     "scrim-light": "#0000007A",
+    "glass-dark": "#12121250",
+    "glass-light": "#FFFFFF8F",
+    "muted-glass-dark": "#C8C8C8",
+    "muted-glass-light": "#454545",
+    "sheen-white": "#FFFFFFA6",
+    "sheen-white-faint": "#FFFFFF33",
+    "sheen-white-strong": "#FFFFFFF2",
+    "sheen-shade": "#00000040",
+    "pressed-dark": "#2C2C2C",
+    "pressed-light": "#D6D5D0",
+    "tint-light-hover": "#FFFFFF14",
+    "tint-light-active": "#FFFFFF29",
+    "tint-dark-hover": "#0000000F",
+    "tint-dark-active": "#0000001F",
     "hplx-ink": "#0E0F11",
     "hplx-panel": "#131518",
     "hplx-raised": "#1E2226",
+    "hplx-raised-pressed": "#2A2F35",
     "hplx-bone": "#ECE7DD",
     "hplx-ash": "#A7A196",
     "hplx-rule": "#2E3339",
     "hplx-edge": "#7E786E",
     "hplx-amber": "#E0A53A",
     "hplx-amber-hover": "#EBB75C",
-    "hplx-amber-active": "#C98F2A",
+    "hplx-amber-active": "#F3C97E",
     "hplx-tar": "#1A1408",
     "hplx-vellum": "#F3EFE6",
     "hplx-parchment": "#E7E0D2",
+    "hplx-parchment-pressed": "#DCD3C2",
     "hplx-soot": "#1A1714",
     "hplx-umber": "#5C554B",
     "hplx-rule-light": "#D6CFC1",
@@ -73,6 +89,7 @@
     "hplx-amber-deep": "#875709",
     "hplx-amber-deep-hover": "#734A07",
     "hplx-amber-deep-active": "#5F3D06",
+    "hplx-glass-dark": "#0E0F1160",
     "shadow-dark": "#00000099",
     "shadow-light": "#00000029",
     "red-50": "#FAEDEB",
@@ -117,11 +134,11 @@
       "selected": "#ECE7DD",
       "action-primary": "#E0A53A",
       "action-primary-hover": "#EBB75C",
-      "action-primary-active": "#C98F2A",
+      "action-primary-active": "#F3C97E",
       "action-primary-fg": "#1A1408",
       "action-secondary": "#131518",
       "action-secondary-hover": "#1E2226",
-      "action-secondary-active": "#0E0F11",
+      "action-secondary-active": "#2A2F35",
       "action-secondary-fg": "#ECE7DD",
       "input-bg": "#0E0F11",
       "input-fg": "#ECE7DD",
@@ -138,6 +155,13 @@
       "ornament-text": "#414141",
       "media-placeholder": "#111111",
       "scrim": "#000000B8",
+      "glass": "#0E0F1160",
+      "glass-border": "#414141",
+      "glass-muted": "#C8C8C8",
+      "glass-sheen": "#FFFFFFA6",
+      "glass-sheen-low": "#FFFFFF33",
+      "glass-hover": "#FFFFFF14",
+      "glass-active": "#FFFFFF29",
       "accent": "#E0A53A",
       "shadow": "#00000099",
       "status-error-fg": "#F2B8B5",
@@ -173,7 +197,7 @@
       "action-primary-fg": "#FFFFFF",
       "action-secondary": "#FFFFFF",
       "action-secondary-hover": "#E7E0D2",
-      "action-secondary-active": "#F3EFE6",
+      "action-secondary-active": "#DCD3C2",
       "action-secondary-fg": "#1A1714",
       "input-bg": "#FFFFFF",
       "input-fg": "#1A1714",
@@ -190,6 +214,13 @@
       "ornament-text": "#C6C5C0",
       "media-placeholder": "#E8E7E3",
       "scrim": "#0000007A",
+      "glass": "#FFFFFF8F",
+      "glass-border": "#C6C5C0",
+      "glass-muted": "#454545",
+      "glass-sheen": "#FFFFFFF2",
+      "glass-sheen-low": "#00000040",
+      "glass-hover": "#0000000F",
+      "glass-active": "#0000001F",
       "accent": "#875709",
       "shadow": "#00000029",
       "status-error-fg": "#8A1F1A",
@@ -227,7 +258,7 @@
       "action-primary-fg": "hplx-tar",
       "action-secondary": "hplx-panel",
       "action-secondary-hover": "hplx-raised",
-      "action-secondary-active": "hplx-ink",
+      "action-secondary-active": "hplx-raised-pressed",
       "action-secondary-fg": "hplx-bone",
       "input-bg": "hplx-ink",
       "input-fg": "hplx-bone",
@@ -244,6 +275,13 @@
       "ornament-text": "graphite",
       "media-placeholder": "media-dark",
       "scrim": "scrim-dark",
+      "glass": "hplx-glass-dark",
+      "glass-border": "graphite",
+      "glass-muted": "muted-glass-dark",
+      "glass-sheen": "sheen-white",
+      "glass-sheen-low": "sheen-white-faint",
+      "glass-hover": "tint-light-hover",
+      "glass-active": "tint-light-active",
       "accent": "hplx-amber",
       "shadow": "shadow-dark",
       "status-error-fg": "red-200",
@@ -279,7 +317,7 @@
       "action-primary-fg": "white",
       "action-secondary": "white",
       "action-secondary-hover": "hplx-parchment",
-      "action-secondary-active": "hplx-vellum",
+      "action-secondary-active": "hplx-parchment-pressed",
       "action-secondary-fg": "hplx-soot",
       "input-bg": "white",
       "input-fg": "hplx-soot",
@@ -296,6 +334,13 @@
       "ornament-text": "rule-light",
       "media-placeholder": "light-soft",
       "scrim": "scrim-light",
+      "glass": "glass-light",
+      "glass-border": "rule-light",
+      "glass-muted": "muted-glass-light",
+      "glass-sheen": "sheen-white-strong",
+      "glass-sheen-low": "sheen-shade",
+      "glass-hover": "tint-dark-hover",
+      "glass-active": "tint-dark-active",
       "accent": "hplx-amber-deep",
       "shadow": "shadow-light",
       "status-error-fg": "red-800",
@@ -446,6 +491,19 @@
       "color": "shadow"
     }
   },
+  "glass": {
+    "blur": "24px",
+    "saturation": 1.4,
+    "sheenAngle": 160,
+    "dark": {
+      "contrast": 0.75,
+      "brightness": 0.5
+    },
+    "light": {
+      "contrast": 0.5,
+      "brightness": 1.35
+    }
+  },
   "native": {
     "description": "Values for non-browser consumers (desktop, game UI, design tools). Lengths are logical px at a 16 px root; letterSpacing is a fraction of the font size; layout.line is a measure in characters; easing is cubic-bezier control points [x1, y1, x2, y2]; colours give hex, straight-alpha sRGB floats [r, g, b, a] and linear-light floats.",
     "rootPx": 16,
@@ -540,6 +598,76 @@
         "srgb": [0, 0, 0, 0.478431],
         "linear": [0, 0, 0, 0.478431]
       },
+      "glass-dark": {
+        "hex": "#12121250",
+        "srgb": [0.070588, 0.070588, 0.070588, 0.313725],
+        "linear": [0.006049, 0.006049, 0.006049, 0.313725]
+      },
+      "glass-light": {
+        "hex": "#FFFFFF8F",
+        "srgb": [1, 1, 1, 0.560784],
+        "linear": [1, 1, 1, 0.560784]
+      },
+      "muted-glass-dark": {
+        "hex": "#C8C8C8",
+        "srgb": [0.784314, 0.784314, 0.784314, 1],
+        "linear": [0.57758, 0.57758, 0.57758, 1]
+      },
+      "muted-glass-light": {
+        "hex": "#454545",
+        "srgb": [0.270588, 0.270588, 0.270588, 1],
+        "linear": [0.059511, 0.059511, 0.059511, 1]
+      },
+      "sheen-white": {
+        "hex": "#FFFFFFA6",
+        "srgb": [1, 1, 1, 0.65098],
+        "linear": [1, 1, 1, 0.65098]
+      },
+      "sheen-white-faint": {
+        "hex": "#FFFFFF33",
+        "srgb": [1, 1, 1, 0.2],
+        "linear": [1, 1, 1, 0.2]
+      },
+      "sheen-white-strong": {
+        "hex": "#FFFFFFF2",
+        "srgb": [1, 1, 1, 0.94902],
+        "linear": [1, 1, 1, 0.94902]
+      },
+      "sheen-shade": {
+        "hex": "#00000040",
+        "srgb": [0, 0, 0, 0.25098],
+        "linear": [0, 0, 0, 0.25098]
+      },
+      "pressed-dark": {
+        "hex": "#2C2C2C",
+        "srgb": [0.172549, 0.172549, 0.172549, 1],
+        "linear": [0.025187, 0.025187, 0.025187, 1]
+      },
+      "pressed-light": {
+        "hex": "#D6D5D0",
+        "srgb": [0.839216, 0.835294, 0.815686, 1],
+        "linear": [0.672443, 0.665387, 0.630757, 1]
+      },
+      "tint-light-hover": {
+        "hex": "#FFFFFF14",
+        "srgb": [1, 1, 1, 0.078431],
+        "linear": [1, 1, 1, 0.078431]
+      },
+      "tint-light-active": {
+        "hex": "#FFFFFF29",
+        "srgb": [1, 1, 1, 0.160784],
+        "linear": [1, 1, 1, 0.160784]
+      },
+      "tint-dark-hover": {
+        "hex": "#0000000F",
+        "srgb": [0, 0, 0, 0.058824],
+        "linear": [0, 0, 0, 0.058824]
+      },
+      "tint-dark-active": {
+        "hex": "#0000001F",
+        "srgb": [0, 0, 0, 0.121569],
+        "linear": [0, 0, 0, 0.121569]
+      },
       "hplx-ink": {
         "hex": "#0E0F11",
         "srgb": [0.054902, 0.058824, 0.066667, 1],
@@ -554,6 +682,11 @@
         "hex": "#1E2226",
         "srgb": [0.117647, 0.133333, 0.14902, 1],
         "linear": [0.012983, 0.015996, 0.019382, 1]
+      },
+      "hplx-raised-pressed": {
+        "hex": "#2A2F35",
+        "srgb": [0.164706, 0.184314, 0.207843, 1],
+        "linear": [0.023153, 0.028426, 0.035601, 1]
       },
       "hplx-bone": {
         "hex": "#ECE7DD",
@@ -586,9 +719,9 @@
         "linear": [0.83077, 0.473531, 0.107023, 1]
       },
       "hplx-amber-active": {
-        "hex": "#C98F2A",
-        "srgb": [0.788235, 0.560784, 0.164706, 1],
-        "linear": [0.584078, 0.274677, 0.023153, 1]
+        "hex": "#F3C97E",
+        "srgb": [0.952941, 0.788235, 0.494118, 1],
+        "linear": [0.896269, 0.584078, 0.208637, 1]
       },
       "hplx-tar": {
         "hex": "#1A1408",
@@ -604,6 +737,11 @@
         "hex": "#E7E0D2",
         "srgb": [0.905882, 0.878431, 0.823529, 1],
         "linear": [0.799103, 0.745404, 0.64448, 1]
+      },
+      "hplx-parchment-pressed": {
+        "hex": "#DCD3C2",
+        "srgb": [0.862745, 0.827451, 0.760784, 1],
+        "linear": [0.715694, 0.651406, 0.539479, 1]
       },
       "hplx-soot": {
         "hex": "#1A1714",
@@ -639,6 +777,11 @@
         "hex": "#5F3D06",
         "srgb": [0.372549, 0.239216, 0.023529, 1],
         "linear": [0.114435, 0.046665, 0.001821, 1]
+      },
+      "hplx-glass-dark": {
+        "hex": "#0E0F1160",
+        "srgb": [0.054902, 0.058824, 0.066667, 0.376471],
+        "linear": [0.004391, 0.004777, 0.005605, 0.376471]
       },
       "shadow-dark": {
         "hex": "#00000099",
@@ -849,9 +992,9 @@
           "linear": [0.83077, 0.473531, 0.107023, 1]
         },
         "action-primary-active": {
-          "hex": "#C98F2A",
-          "srgb": [0.788235, 0.560784, 0.164706, 1],
-          "linear": [0.584078, 0.274677, 0.023153, 1]
+          "hex": "#F3C97E",
+          "srgb": [0.952941, 0.788235, 0.494118, 1],
+          "linear": [0.896269, 0.584078, 0.208637, 1]
         },
         "action-primary-fg": {
           "hex": "#1A1408",
@@ -869,9 +1012,9 @@
           "linear": [0.012983, 0.015996, 0.019382, 1]
         },
         "action-secondary-active": {
-          "hex": "#0E0F11",
-          "srgb": [0.054902, 0.058824, 0.066667, 1],
-          "linear": [0.004391, 0.004777, 0.005605, 1]
+          "hex": "#2A2F35",
+          "srgb": [0.164706, 0.184314, 0.207843, 1],
+          "linear": [0.023153, 0.028426, 0.035601, 1]
         },
         "action-secondary-fg": {
           "hex": "#ECE7DD",
@@ -952,6 +1095,41 @@
           "hex": "#000000B8",
           "srgb": [0, 0, 0, 0.721569],
           "linear": [0, 0, 0, 0.721569]
+        },
+        "glass": {
+          "hex": "#0E0F1160",
+          "srgb": [0.054902, 0.058824, 0.066667, 0.376471],
+          "linear": [0.004391, 0.004777, 0.005605, 0.376471]
+        },
+        "glass-border": {
+          "hex": "#414141",
+          "srgb": [0.254902, 0.254902, 0.254902, 1],
+          "linear": [0.052861, 0.052861, 0.052861, 1]
+        },
+        "glass-muted": {
+          "hex": "#C8C8C8",
+          "srgb": [0.784314, 0.784314, 0.784314, 1],
+          "linear": [0.57758, 0.57758, 0.57758, 1]
+        },
+        "glass-sheen": {
+          "hex": "#FFFFFFA6",
+          "srgb": [1, 1, 1, 0.65098],
+          "linear": [1, 1, 1, 0.65098]
+        },
+        "glass-sheen-low": {
+          "hex": "#FFFFFF33",
+          "srgb": [1, 1, 1, 0.2],
+          "linear": [1, 1, 1, 0.2]
+        },
+        "glass-hover": {
+          "hex": "#FFFFFF14",
+          "srgb": [1, 1, 1, 0.078431],
+          "linear": [1, 1, 1, 0.078431]
+        },
+        "glass-active": {
+          "hex": "#FFFFFF29",
+          "srgb": [1, 1, 1, 0.160784],
+          "linear": [1, 1, 1, 0.160784]
         },
         "accent": {
           "hex": "#E0A53A",
@@ -1121,9 +1299,9 @@
           "linear": [0.799103, 0.745404, 0.64448, 1]
         },
         "action-secondary-active": {
-          "hex": "#F3EFE6",
-          "srgb": [0.952941, 0.937255, 0.901961, 1],
-          "linear": [0.896269, 0.863157, 0.791298, 1]
+          "hex": "#DCD3C2",
+          "srgb": [0.862745, 0.827451, 0.760784, 1],
+          "linear": [0.715694, 0.651406, 0.539479, 1]
         },
         "action-secondary-fg": {
           "hex": "#1A1714",
@@ -1204,6 +1382,41 @@
           "hex": "#0000007A",
           "srgb": [0, 0, 0, 0.478431],
           "linear": [0, 0, 0, 0.478431]
+        },
+        "glass": {
+          "hex": "#FFFFFF8F",
+          "srgb": [1, 1, 1, 0.560784],
+          "linear": [1, 1, 1, 0.560784]
+        },
+        "glass-border": {
+          "hex": "#C6C5C0",
+          "srgb": [0.776471, 0.772549, 0.752941, 1],
+          "linear": [0.564712, 0.55834, 0.527115, 1]
+        },
+        "glass-muted": {
+          "hex": "#454545",
+          "srgb": [0.270588, 0.270588, 0.270588, 1],
+          "linear": [0.059511, 0.059511, 0.059511, 1]
+        },
+        "glass-sheen": {
+          "hex": "#FFFFFFF2",
+          "srgb": [1, 1, 1, 0.94902],
+          "linear": [1, 1, 1, 0.94902]
+        },
+        "glass-sheen-low": {
+          "hex": "#00000040",
+          "srgb": [0, 0, 0, 0.25098],
+          "linear": [0, 0, 0, 0.25098]
+        },
+        "glass-hover": {
+          "hex": "#0000000F",
+          "srgb": [0, 0, 0, 0.058824],
+          "linear": [0, 0, 0, 0.058824]
+        },
+        "glass-active": {
+          "hex": "#0000001F",
+          "srgb": [0, 0, 0, 0.121569],
+          "linear": [0, 0, 0, 0.121569]
         },
         "accent": {
           "hex": "#875709",
@@ -1492,6 +1705,19 @@
       "durationMs": 140,
       "reducedDurationMs": 0,
       "easing": [0, 0, 0.58, 1]
+    },
+    "glass": {
+      "blurPx": 24,
+      "saturation": 1.4,
+      "sheenAngleDeg": 160,
+      "dark": {
+        "contrast": 0.75,
+        "brightness": 0.5
+      },
+      "light": {
+        "contrast": 0.5,
+        "brightness": 1.35
+      }
     }
   }
 }

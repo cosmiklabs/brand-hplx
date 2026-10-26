@@ -4,6 +4,38 @@ The family version (`version` in `tokens/family.json`, also the manifest and
 package version) follows semver. The Cosmik foundation this family builds on is
 pinned separately in `vendor/brand/brand.lock.json`. Newest first.
 
+## 0.2.0 · 26 October 2026
+
+- **Licence.** `LICENSE.md` names COSMIK LABS, LLC as the holder of the copyright
+  in this repository's own material and of the marks, including the HPLX marks, in
+  place of "not a company or other legal entity", the contributors and the
+  organisation's owner. The MIT notice reads "Copyright (c) 2026 COSMIK LABS, LLC".
+  Sections, grants and permissions are otherwise unchanged. The change applies
+  from this release.
+- **Foundation `cosmiklabs/brand` v0.16.1** (commit
+  `4da5ba28b1c32cf6b717ca1cb579b6c6d237ec3d`), synced with its `vendor.mjs` from
+  v0.11.0. The baseline token version moves from 0.7.0 to **0.11.0**, so
+  `extends` is `"Cosmik baseline 0.11.0"`. Between the two: pressed is a deeper
+  step of hover (0.15.1), glass keeps the theme's tone and is legible over any
+  backdrop through a per-tone backdrop filter (0.16.0), the same licence change
+  (0.16.1), and the shared controls and guide changes in between. See the
+  foundation's [changelog](https://github.com/cosmiklabs/brand/blob/v0.16.1/CHANGELOG.md).
+- **Pressed states continue hover.** The foundation's contract now requires each
+  rest → hover → pressed ramp to move one way. HPLX's rest and hover colours are
+  unchanged; only the pressed step moves:
+  - dark primary: `hplx-amber-active` `#C98F2A` → `#F3C97E`, one step lighter
+    than the hover `#EBB75C` (it went darker than rest);
+  - dark secondary: `#0E0F11` (ink, darker than rest) → new `hplx-raised-pressed`
+    `#2A2F35`, one step lighter than the hover `#1E2226`;
+  - light secondary: `#F3EFE6` (vellum, back towards rest) → new
+    `hplx-parchment-pressed` `#DCD3C2`, one step deeper than the hover `#E7E0D2`.
+- **Dark glass tint.** New `hplx-glass-dark` `#0E0F1160` (38 %, HPLX ink) for the
+  dark `glass` role: over the baseline's 31 % tint, HPLX's bone secondary text on
+  the pressed glass tint reached 4.14:1 over the worst backdrop; at 38 % it is 4.52:1
+  (4.5:1 required). The light tone keeps the baseline's tint.
+- All 218 contrast pairs pass. The new pressed and glass values await owner review;
+  no mark, font or rest-state colour changes.
+
 ## 0.1.2 · 24 October 2026
 
 - **Foundation `cosmiklabs/brand` v0.11.0** (commit
