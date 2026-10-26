@@ -42,3 +42,18 @@ test('tooling refuses unreviewed sources',()=>{
  const empty=fs.mkdtempSync(path.join(os.tmpdir(),'tooling-mismatch-'));
  try{assert.throws(()=>verifyTooling(empty),/content lock/);}finally{fs.rmSync(empty,{recursive:true,force:true});}
 });
+
+
+test('shared navigation labels, order and overview actions stay consistent',()=>{
+ const home=read('index.html');
+ const nav=home.match(/<nav aria-label="Reference">([\s\S]*?)<\/nav>/)[1];
+ const groups=[...nav.matchAll(/class="eyebrow">([^<]+)/g)].map(m=>m[1]);
+ assert.deepEqual(groups.filter(g=>g!=='Archive'),['Start here','Foundations','Experience','Implementation','Tools','Resources']);
+ for(const label of ['Identity &amp; usage','Family contract','Quality review','Governance','Asset library','Design tokens','Component examples','Validation record'])assert.ok(nav.includes('>'+label+'</a>'),label);
+ assert.ok(home.includes('placeholder="Search this guide…"'));
+ assert.ok(home.includes('Read the brand guide'));
+ assert.ok(home.includes('href="assets.html">Browse assets</a>'));
+ const components=read('components.html');
+ assert.ok(components.includes('aria-current="page">Component examples'));
+ assert.ok(components.includes('aria-label="Brand references"'));
+});
