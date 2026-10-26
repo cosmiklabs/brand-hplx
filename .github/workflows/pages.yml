@@ -19,19 +19,10 @@ jobs:
       - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
         with:
           node-version: '24'
-      - name: Require an immutable reference-tooling revision
-        env:
-          TOOLING_REF: ${{ vars.BRAND_REFERENCE_REF }}
-        shell: bash
-        run: |
-          if [[ ! "$TOOLING_REF" =~ ^[0-9a-f]{40}$ ]]; then
-            echo "Set BRAND_REFERENCE_REF to the reviewed 40-character cosmiklabs/brand commit SHA."
-            exit 1
-          fi
       - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
         with:
           repository: cosmiklabs/brand
-          ref: ${{ vars.BRAND_REFERENCE_REF }}
+          ref: 302f56319f716c68625af91a6c3e75701a4c90a0
           path: .reference-tooling
           persist-credentials: false
       - name: Configure Pages

@@ -16,7 +16,7 @@ npm run check
 
 ## GitHub Pages
 
-The Pages workflow deploys only generated `site/`. Before the first deployment, publish the shared reference tooling in the `brand` repository, then set this repository’s **`BRAND_REFERENCE_REF` Actions variable to that exact 40-character commit SHA**. The workflow refuses a moving branch, checks out that immutable revision separately at `.reference-tooling/`, and the local content lock verifies its presentation files again. The normal check workflow uses the same dependency setup.
+The Pages workflow deploys only generated `site/`. Both workflows pin the shared presentation tooling to commit `302f56319f716c68625af91a6c3e75701a4c90a0` in `cosmiklabs/brand`, checked out separately at `.reference-tooling/`. The local content lock verifies its presentation files again. Updating the tooling requires reviewing both the commit pin and file hashes; no Actions variable is needed.
 
 Select **Settings → Pages → GitHub Actions** as the Pages source. A push to `main` or a manual workflow run then builds, tests and deploys the reference. The expected project URL is `https://cosmiklabs.github.io/brand-hplx/`; this is not a claim that it is already deployed. The shared guide navigation points to all three separate project URLs.
 
