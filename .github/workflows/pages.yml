@@ -22,7 +22,7 @@ jobs:
       - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
         with:
           repository: cosmiklabs/brand
-          ref: 302f56319f716c68625af91a6c3e75701a4c90a0
+          ref: dc3f63af52146c6800e35ce9335eed416b9d79c4
           path: .reference-tooling
           persist-credentials: false
       - name: Configure Pages

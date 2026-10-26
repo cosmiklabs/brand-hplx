@@ -13,3 +13,8 @@ Reviewed on 2026-10-26. `npm run build` and `npm run check` pass (30 tests). Ref
 Live browser review covered 36 cases for this family: overview, typography, color, tokens, assets and components in light/dark modes at 1440, 390 and 320 CSS pixels. All had one main heading, no page overflow and no broken images; mobile navigation began collapsed. Search, empty token results, token filtering and form reset were exercised. Cross-navigation through Tectra → Cosmik → HPLX → Tectra worked in a preview bundle with local destinations. The browser reported no warnings or errors.
 
 The production cross-links use the expected GitHub Pages URLs; remote deployment has not been verified. Local previews substitute relative links between the three generated sites. Browser review used the supported live browser; the separate root headless browser runner could not launch in this environment during the earlier root reference review. No additional assistive-technology, browser-engine, JavaScript-disabled or print review is claimed. No source changes are committed or published by this review.
+
+
+## Reference header alignment — 2026-10-26
+
+The shared reference header now has an 88 px minimum desktop height and a 72 px minimum mobile height. Logos retain their proportions and remain vertically centered. At widths of 380 px and below, the visible Theme label is hidden while the select retains its accessible name, keeping the header on one row. Live local browser measurements confirmed identical heights across Cosmik, HPLX and Tectra at 1280, 390 and 320 px with no horizontal overflow. All 164 repository tests passed before the final narrow-screen label adjustment; that adjustment was checked in the live browser.
