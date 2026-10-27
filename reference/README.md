@@ -16,7 +16,7 @@ npm run check
 
 ## GitHub Pages
 
-The Pages workflow deploys only generated `site/`. Both workflows pin the shared presentation tooling to commit `e74b1e33290c6b60d7b6b2ab879927426e1dc82e` in `cosmiklabs/brand`, checked out separately at `.reference-tooling/`. The local content lock verifies its presentation files again. Updating the tooling requires reviewing both the commit pin and file hashes; no Actions variable is needed.
+The Pages workflow deploys only generated `site/`. Both workflows pin the shared presentation tooling to commit `c2544514221fb019ec7e015e37cb7e2ba00c502f` in `cosmiklabs/brand`, checked out separately at `.reference-tooling/`. The local content lock verifies its presentation files again. Updating the tooling requires reviewing both the commit pin and file hashes; no Actions variable is needed.
 
 Select **Settings → Pages → GitHub Actions** as the Pages source. A push to `main` or a manual workflow run then builds, tests and deploys the reference. The expected project URL is `https://cosmiklabs.github.io/brand-hplx/`; this is not a claim that it is already deployed. The shared guide navigation points to all three separate project URLs.
 

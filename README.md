@@ -23,9 +23,11 @@ If a linked logo alone identifies the destination, use an accessible name such a
 ## Product presentation
 
 HPLX is an editor for *Amnesia: The Dark Descent* custom stories, with playtesting
-built in. Lead with the author's creative workflow: **Build a story. Play it as
-you build.** Follow it with the plain description so an unfamiliar visitor knows
-which game and task it serves.
+built in. The current marketing headline is **Build your story. Step inside it.**
+Follow it with the plain description so an unfamiliar visitor knows which game
+and task it serves. **Build a story. Play it as you build.** is a supporting short
+line for introductions and contexts that need to explain the editing/playtesting
+workflow directly; it does not replace the product site's headline.
 
 ### Audience and value
 

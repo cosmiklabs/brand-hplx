@@ -78,6 +78,9 @@ test('voice guidance combines current product wording with immutable shared rule
  assert.match(voice,/Product source/);
  assert.match(voice,/Pinned shared source/);
  assert.match(voice,/The vendored source remains unchanged/);
+ assert.match(voice,/class="source-links"/);
+ assert.ok(voice.indexOf('<h1')<voice.indexOf('provenance-note'),'page heading leads the source explanation');
+ assert.match(voice,/<details class="notice provenance-note"><summary>Current /);
  assert.doesNotMatch(voice,/No replacement motto or organisation-wide descriptor is approved/);
  assert.match(voice,/Useful, direct language/);
  assert.match(voice,/Imagery and icons/);

@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Recorded “Build your story. Step inside it.” as the current marketing headline, with the editing/playtesting line as supporting copy. Adopted narrow metadata/table fixes and a compact title-first source explanation.
+
 - Added current editor-first product positioning, availability and evidence rules, and a secondary Cosmik endorsement. Voice & imagery now brings the current product guidance together with the pinned foundation’s general writing rules.
 
 - Removed retired Ember artwork, lockups, platform icons, source files, guide and builders. Removed historical manifest entry points and the Historical page. Current consumers should use the Glimmer entry points; older consumers can pin their existing release or recover retired files from Git history.

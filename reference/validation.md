@@ -66,3 +66,13 @@ Executed `npm run build` and `npm run check`: 25 tests passed, including complet
 local links/fragments and a regression proving current product messaging appears in
 the page and search index while the old unresolved descriptor does not. This check
 does not claim a new rendered review of the longer prose or a published release.
+
+
+## Narrow source and table layout — 26 October 2026 (unreleased)
+
+Adopted shared presentation fixes for metadata wrapping, narrow prose-table columns
+and title-first source explanations. Current product guidance is unchanged by the
+layout adjustment; both source links and the pinned-versus-current distinction
+remain available. Family reference checks pass, including the title-before-source
+explanation regression. Root browser coverage exercises the shared Voice table and
+metadata behavior at narrow widths; no additional family browser result is implied.

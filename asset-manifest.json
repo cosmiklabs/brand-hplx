@@ -338,7 +338,7 @@
         "kind": "documentation"
       },
       "status": "HPLX family guide: Glimmer approved (owner, 2026-10-17); theme approved (owner, 2026-10-15)",
-      "sha256": "4b3815c0e0b9676c862347107b9e94fcdd461d58a18be987be8eac8518570a36",
+      "sha256": "bd9d2bcfb86d7110966c707dbd6a5bfa92f6cef73aba31b1ecb1ed0a7a6880c2",
       "editable": true
     }
   ],
@@ -388,7 +388,7 @@
       },
       {
         "path": "README.md",
-        "sha256": "4b3815c0e0b9676c862347107b9e94fcdd461d58a18be987be8eac8518570a36"
+        "sha256": "bd9d2bcfb86d7110966c707dbd6a5bfa92f6cef73aba31b1ecb1ed0a7a6880c2"
       },
       {
         "path": "assets/glimmer.source.json",
