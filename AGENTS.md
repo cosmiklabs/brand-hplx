@@ -1,6 +1,6 @@
 # Working on the HPLX brand family
 
-- Read `README.md`, `EMBER-HISTORICAL.md` and the vendored foundation's
+- Read `README.md` and the vendored foundation's
   `vendor/brand/guide/families.md` and `vendor/brand/guide/governance.md`. Inspect the
   working tree and preserve unrelated work. Keep the requested scope clear.
 - Preserve approved marks, palettes, fonts and guidance unless the owner explicitly
@@ -10,10 +10,8 @@
   and tools belong in `cosmiklabs/brand`; propose them there instead of adding a
   parallel copy here.
 - Edit authoritative sources: `tokens/family.json` for token values, and the mark
-  sources named in the README and the manifest (`assets/glimmer.source.json`,
-  `assets/ember.source.json`, `assets/ember-small.source.json`,
-  `assets/hplx-lockup.source.json`). Never hand-edit generated tokens, SVGs, PNGs or
-  icons, or the historical Ember master and its source.
+  sources named in the README and the manifest (`assets/glimmer.source.json`). Never hand-edit generated tokens or SVGs.
+- Retired identities and superseded guides belong in Git history, not archive folders.
 - Never edit anything under `vendor/brand/`. Update it only with
   `node <brand checkout>/scripts/vendor.mjs sync --from <brand checkout> --into vendor/brand`
   from a clean checkout at a release tag, then rebuild. `vendor.mjs verify` fails on

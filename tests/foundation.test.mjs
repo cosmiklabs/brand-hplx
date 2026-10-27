@@ -57,7 +57,8 @@ test('the manifest names the locked release and distributes both layers to consu
   const listed = new Map(set.files.map(e => [e.path, e.sha256]));
   for (const {path: p, sha256} of expected.files) assert.equal(listed.get(p), sha256, p);
   assert.ok(listed.has(LOCK));
-  for (const p of ['LICENSE.md', 'README.md', 'EMBER-HISTORICAL.md', 'tokens/hplx.css', 'fonts/web/Spectral-SemiBold.woff2', 'fonts/licenses/Spectral-OFL.txt', 'assets/hplx-glimmer-dark.svg', 'icons/hplx-ember.ico']) assert.ok(listed.has(p), p);
+  assert.ok(![...listed.keys()].some(p=>/ember|hplx-lockup|HISTORICAL/.test(p)));
+  for (const p of ['LICENSE.md', 'README.md', 'tokens/hplx.css', 'fonts/web/Spectral-SemiBold.woff2', 'fonts/licenses/Spectral-OFL.txt', 'assets/hplx-glimmer-dark.svg']) assert.ok(listed.has(p), p);
   assert.equal(manifest.version, JSON.parse(fs.readFileSync(path.join(root, 'tokens/family.json'), 'utf8')).version);
   assert.equal(pkg.version, manifest.version);
 });

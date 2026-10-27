@@ -12,7 +12,7 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 function fixture(t) {
   const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'brand-hplx-manifest-'));
   t.after(() => fs.rmSync(dir, {recursive: true, force: true}));
-  for (const part of ['asset-manifest.json', 'package.json', 'LICENSE.md', 'README.md', 'EMBER-HISTORICAL.md', 'assets', 'icons', 'tokens', 'fonts', 'vendor', 'scripts']) {
+  for (const part of ['asset-manifest.json', 'package.json', 'LICENSE.md', 'README.md', 'assets', 'tokens', 'fonts', 'vendor', 'scripts']) {
     fs.cpSync(path.join(root, part), path.join(dir, part), {recursive: true});
   }
   return dir;
@@ -34,11 +34,11 @@ test('unlisted exports and edited vendored files are reported, and nothing is bl
   assert.deepEqual(fs.readFileSync(path.join(dir, 'asset-manifest.json')), before);
 });
 
-test('approved sources, fonts and notices are never rehashed by a build', t => {
+test('protected fonts and notices are never rehashed by a build', t => {
   const dir = fixture(t);
-  for (const p of ['assets/ember.source.json', 'fonts/desktop/Spectral-SemiBold.ttf', 'fonts/licenses/Spectral-OFL.txt', 'LICENSE.md']) fs.appendFileSync(path.join(dir, p), 'x');
+  for (const p of ['fonts/desktop/Spectral-SemiBold.ttf', 'fonts/licenses/Spectral-OFL.txt', 'LICENSE.md']) fs.appendFileSync(path.join(dir, p), 'x');
   const result = verifyManifest(dir, {updateGenerated: true});
-  for (const p of [/ember\.source\.json/, /Spectral-SemiBold\.ttf/, /Spectral-OFL\.txt/, /LICENSE\.md/]) has(result, p);
+  for (const p of [/Spectral-SemiBold\.ttf/, /Spectral-OFL\.txt/, /LICENSE\.md/]) has(result, p);
 });
 
 test('a stale brand reference, distribution or version is reported until a build refreshes it', t => {

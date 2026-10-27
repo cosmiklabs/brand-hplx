@@ -39,7 +39,7 @@ export function fromLock(directory) {
 export function distributionFor(own, foundationFiles) {
   const files = [...own.map(e => ({ path: e.path, sha256: e.sha256 })), ...foundationFiles].sort((a, b) => (a.path < b.path ? -1 : 1));
   return {
-    description: 'Every file a consumer syncs from a release of this repository with vendor/brand/scripts/vendor.mjs sync, with its SHA-256: the HPLX tokens, Glimmer and historical Ember marks, icons, Spectral with its notice, guides and licence, and the Cosmik foundation under vendor/brand/ unchanged with its lock. `vendor.mjs verify` checks both layers.',
+    description: 'Every file a consumer syncs from a release of this repository with vendor/brand/scripts/vendor.mjs sync, with its SHA-256: the HPLX tokens, Glimmer marks, Spectral with its notice, guides and licence, and the Cosmik foundation under vendor/brand/ unchanged with its lock. `vendor.mjs verify` checks both layers.',
     files,
   };
 }

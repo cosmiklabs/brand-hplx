@@ -8,4 +8,3 @@ and [family contract](../vendor/brand/guide/families.md).
 
 The current approved symbol is **Glimmer**. Use the [HPLX identity guide](../README.md)
 and canonical entry points in the root [manifest](../asset-manifest.json).
-Ember artwork and icons are historical; do not select them for a new integration.

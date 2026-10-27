@@ -1,6 +1,6 @@
 # HPLX HTML reference
 
-The generated `site/` is this family’s own brand reference. It renders the local family guide, license, changelog and relevant historical/validation notes, with shared rules read from the unchanged foundation pinned at `vendor/brand/`. Family typography, palette, current marks and fonts come from this repository, never the latest baseline checkout.
+The generated `site/` is this family’s own brand reference. It renders the local family guide, license, changelog and relevant validation notes, with shared rules read from the unchanged foundation pinned at `vendor/brand/`. Family typography, palette, current marks and fonts come from this repository, never the latest baseline checkout.
 
 ## Shared presentation tooling
 
@@ -16,7 +16,7 @@ npm run check
 
 ## GitHub Pages
 
-The Pages workflow deploys only generated `site/`. Both workflows pin the shared presentation tooling to commit `b502b6429c5c30a2702d2f78e51e7b0c06167290` in `cosmiklabs/brand`, checked out separately at `.reference-tooling/`. The local content lock verifies its presentation files again. Updating the tooling requires reviewing both the commit pin and file hashes; no Actions variable is needed.
+The Pages workflow deploys only generated `site/`. Both workflows pin the shared presentation tooling to commit `dab74de43dcdede32d0331f09aa93c207373a928` in `cosmiklabs/brand`, checked out separately at `.reference-tooling/`. The local content lock verifies its presentation files again. Updating the tooling requires reviewing both the commit pin and file hashes; no Actions variable is needed.
 
 Select **Settings → Pages → GitHub Actions** as the Pages source. A push to `main` or a manual workflow run then builds, tests and deploys the reference. The expected project URL is `https://cosmiklabs.github.io/brand-hplx/`; this is not a claim that it is already deployed. The shared guide navigation points to all three separate project URLs.
 
