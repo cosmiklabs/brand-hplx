@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Added current editor-first product positioning, availability and evidence rules, and a secondary Cosmik endorsement. Voice & imagery now brings the current product guidance together with the pinned foundation’s general writing rules.
+
 - Removed retired Ember artwork, lockups, platform icons, source files, guide and builders. Removed historical manifest entry points and the Historical page. Current consumers should use the Glimmer entry points; older consumers can pin their existing release or recover retired files from Git history.
 
 The family version (`version` in `tokens/family.json`, also the manifest and

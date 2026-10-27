@@ -20,6 +20,61 @@ The symbol has a 64×64 viewBox and visible bounds [8,6,48,54]. Keep at least 8 
 
 If a linked logo alone identifies the destination, use an accessible name such as “HPLX”. If adjacent text already identifies it, hide the decorative symbol from assistive technology. Preserve transparent backgrounds and use a contrasting approved variant. Keep Cosmik’s endorsement separate.
 
+## Product presentation
+
+HPLX is an editor for *Amnesia: The Dark Descent* custom stories, with playtesting
+built in. Lead with the author's creative workflow: **Build a story. Play it as
+you build.** Follow it with the plain description so an unfamiliar visitor knows
+which game and task it serves.
+
+### Audience and value
+
+Speak first to people making custom stories for the original *The Dark Descent*.
+Show placing and changing a scene, playing from the editor, and returning to make
+the next change. Specific workflow evidence is more useful than “easier and better”
+on its own. The engine reimplementation supports this experience; Rust, Bevy and
+repository structure are secondary technical context, not the opening pitch.
+
+HPLX is one product. “Editor” and “built-in playtesting” describe its capabilities,
+not competing brands. A public mention of another supported game requires current
+product evidence; the HPLX name is not a promise of support for the whole HPL series.
+
+### Availability and requirements
+
+HPLX is in development, with no public release yet. Do not imply that a downloadable
+release exists because its release workflow is implemented. Describe platform
+support only at its verified scope, and distinguish tested configurations from
+planned release targets. No release date is announced.
+
+Cosmik does not require payment to use HPLX; this commitment is specific to HPLX.
+The original game is obtained separately and may cost money. HPLX reads game content
+from the person's own legitimately obtained local installation and does not include
+or distribute the original game's assets. Keep this prerequisite close to download
+or setup decisions and in a concise FAQ, rather than making it the whole opening.
+
+HPLX is independent of and unaffiliated with Frictional Games. Preserve third-party
+credits and notices. The implementation's licence, source visibility, available
+builds and the brand artwork's terms are separate facts; do not infer any one from
+another.
+
+### Voice, imagery and next steps
+
+Use direct, encouraging language about making a playable story. The warm palette,
+Spectral headings and Glimmer give HPLX its character; interface labels stay plain
+and familiar. Avoid writing in a horror character's voice, decorative lore, or
+turning the original game's identity into HPLX's own mark.
+
+Prefer an actual editing and playtesting sequence with a clear explanation of what
+changed. Label a diagram as an illustration. Never present a simulated editor as
+a screenshot, or a prepared scene as proof of gameplay compatibility. Keep original
+game artwork in its credited product context.
+
+HPLX leads its marketing, documentation and support surfaces. Use a quiet “By
+Cosmik” in the footer or About context, separate from the product logo. In-development
+pages should offer a real way to ask about HPLX or follow maintained updates;
+“Download” appears only when a download is available. Do not promise beta access,
+a response deadline or a newsletter that does not exist.
+
 ## Theme and generation
 
 The approved HPLX palette and Spectral headings are unchanged. When HPLX content appears inside a Cosmik organisation surface, the enclosing organisation identity remains baseline; HPLX product interfaces use the family kit. This does not prescribe a navigation layout. Run `node scripts/build.mjs` to regenerate the canonical SVGs through `scripts/build-glimmer-assets.mjs`; `node scripts/check.mjs` tests the exact approved geometry, manifest and contrast roles.

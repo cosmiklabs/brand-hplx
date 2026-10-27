@@ -52,3 +52,17 @@ This supersedes the earlier header sizing pass. Container dimensions alone did n
 Removed the Historical navigation/page from the shared reference builder. Retired HPLX Ember assets, lockups, icons, builders and asset tests, plus Cosmik’s superseded guides and alternate artwork, are recoverable from Git history. Current approved assets, font notices, licence terms and pinned foundations remain unchanged. Manifest and navigation checks reject references to the retired page and HPLX distribution entries.
 
 Executed builds and checks: 104 Cosmik, 24 current HPLX and 36 Tectra tests passed. HPLX’s seven retired-asset tests were removed with their assets; current Glimmer geometry, manifest, vendoring and navigation checks remain. Inspected the local HPLX Guide index and confirmed that neither navigation nor index contains an Archive/Historical section.
+
+
+## Marketing guidance — 26 October 2026 (unreleased)
+
+The current Product presentation section is authoritative in this family's README
+and also appears on Voice & imagery. General writing and imagery rules still come
+from the pinned foundation. The rendered page explicitly identifies both sources
+and omits the pinned release's superseded organization-positioning section, linking
+to current Cosmik guidance instead. Vendored files and identity assets are unchanged.
+
+Executed `npm run build` and `npm run check`: 25 tests passed, including complete
+local links/fragments and a regression proving current product messaging appears in
+the page and search index while the old unresolved descriptor does not. This check
+does not claim a new rendered review of the longer prose or a published release.

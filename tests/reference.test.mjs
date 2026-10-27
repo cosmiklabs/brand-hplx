@@ -70,3 +70,20 @@ test('shared navigation labels, order and overview actions stay consistent',()=>
  assert.ok(components.includes('aria-current="page">Component examples'));
  assert.ok(components.includes('aria-label="Brand references"'));
 });
+
+
+test('voice guidance combines current product wording with immutable shared rules',()=>{
+ const voice=read('voice.html');
+ assert.match(voice,/id="product-presentation"/);
+ assert.match(voice,/Product source/);
+ assert.match(voice,/Pinned shared source/);
+ assert.match(voice,/The vendored source remains unchanged/);
+ assert.doesNotMatch(voice,/No replacement motto or organisation-wide descriptor is approved/);
+ assert.match(voice,/Useful, direct language/);
+ assert.match(voice,/Imagery and icons/);
+ const index=JSON.parse(read('search-index.js').replace(/^window.CosmikReferenceIndex=/,'').trim().replace(/;$/,''));
+ const entry=index.find(page=>page.url==='voice.html');
+ assert.match(entry.text,/Product presentation/);
+ assert.doesNotMatch(entry.text,/No replacement motto or organisation-wide descriptor is approved/);
+ assert.ok(entry.sections.some(section=>section.id==='product-presentation'));
+});

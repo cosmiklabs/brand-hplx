@@ -16,8 +16,14 @@ npm run check
 
 ## GitHub Pages
 
-The Pages workflow deploys only generated `site/`. Both workflows pin the shared presentation tooling to commit `dab74de43dcdede32d0331f09aa93c207373a928` in `cosmiklabs/brand`, checked out separately at `.reference-tooling/`. The local content lock verifies its presentation files again. Updating the tooling requires reviewing both the commit pin and file hashes; no Actions variable is needed.
+The Pages workflow deploys only generated `site/`. Both workflows pin the shared presentation tooling to commit `e74b1e33290c6b60d7b6b2ab879927426e1dc82e` in `cosmiklabs/brand`, checked out separately at `.reference-tooling/`. The local content lock verifies its presentation files again. Updating the tooling requires reviewing both the commit pin and file hashes; no Actions variable is needed.
 
 Select **Settings → Pages → GitHub Actions** as the Pages source. A push to `main` or a manual workflow run then builds, tests and deploys the reference. The expected project URL is `https://cosmiklabs.github.io/brand-hplx/`; this is not a claim that it is already deployed. The shared guide navigation points to all three separate project URLs.
 
 No release tag, family version, product availability or platform icon approval is created by publishing a reference site. See [the validation record](validation.md) for executed checks and remaining limits.
+
+
+The current marketing review is committed locally. Before publishing these family
+reference changes, publish their pinned shared-tooling commit in `cosmiklabs/brand`
+first. This is a presentation-tooling update, not a change to the immutable
+vendored foundation or a new family release.
